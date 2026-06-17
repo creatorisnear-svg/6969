@@ -5,3 +5,5 @@ entity.cumin:jenny_nude.name=Jenny
 entity.cumin:jenny_nude_blowj.name=Jenny
 entity.cumin:jenny_blowj.name=Jenny
 tile.cumin:jenny_bed.name=Jenny Bed
+action.interact.talk=Talk to Jenny
+action.interact.give_emerald=Give Emerald
