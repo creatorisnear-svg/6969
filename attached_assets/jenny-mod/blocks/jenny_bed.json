@@ -1,0 +1,130 @@
+//bridge-file-version: #54
+{
+	"minecraft:block": {
+		"description": {
+			"properties": {
+				"bridge:block_rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			},
+			"identifier": "cumin:jenny_bed"
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:on_player_placing": {
+				"event": "bridge:update_rotation"
+			},
+			"minecraft:destroy_time": 0.9,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:creative_category": {
+				"category": "items"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "jennybed",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.jenny_bed",
+			"minecraft:pick_collision": {
+				"size": [
+					16,
+					8,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:entity_collision": {
+				"size": [
+					32,
+					8,
+					32
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					0.1,
+					0.1
+				],
+				"on_tick": {
+					"event": "s3x"
+				}
+			}
+		},
+		"events": {
+			"bridge:update_rotation": {
+				"set_block_property": {
+					"bridge:block_rotation": "query.cardinal_facing_2d"
+				}
+			},
+			"s3x": {
+				"run_command": {
+					"command": [
+						"gamerule sendcommandfeedback false",
+						"event entity @e[type=cumin:jenny_nude_search_bed,r=3] in_bed",
+						"execute @e[type=cumin:jenny_s3x,r=5] ~ ~ ~ tp @p ^ ^-0.4 ^-1 facing ~ ~-0.5 ~",
+						"tp @e[type=cumin:jenny_s3x,r=3] ~ ~ ~"
+					]
+				}
+			}
+		}
+	},
+	"format_version": "1.17.0"
+}

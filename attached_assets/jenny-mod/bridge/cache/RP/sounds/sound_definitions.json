@@ -1,0 +1,103 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\JennyModRe\\sounds\\sound_definitions.json",
+	"file_type": "sound_definition",
+	"format_version": 1,
+	"file_uuid": "9f9f6ccc_64fe_4a53_a21e_e3f20d345cea",
+	"file_version": 10,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"sound_definitions": {
+						"jenny.iddle": {
+							"sounds": [
+								"sounds/jenny/giggle0",
+								"sounds/jenny/giggle1",
+								"sounds/jenny/giggle2",
+								"sounds/jenny/giggle3",
+								"sounds/jenny/giggle4"
+							]
+						},
+						"jenny.blowj": {
+							"sounds": [
+								"sounds/jenny/blowj/blowj"
+							]
+						},
+						"jenny.s3x": {
+							"sounds": [
+								"sounds/jenny/s3x/s3x"
+							]
+						}
+					}
+				},
+				"key": "sound_definitions",
+				"children": [
+					{
+						"key": "jenny.iddle",
+						"children": [
+							{
+								"open": {
+									"sounds": [
+										"sounds/jenny/giggle0",
+										"sounds/jenny/giggle1",
+										"sounds/jenny/giggle2",
+										"sounds/jenny/giggle3",
+										"sounds/jenny/giggle4"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/jenny/giggle0",
+									"sounds/jenny/giggle1",
+									"sounds/jenny/giggle2",
+									"sounds/jenny/giggle3",
+									"sounds/jenny/giggle4"
+								]
+							}
+						]
+					},
+					{
+						"key": "jenny.blowj",
+						"children": [
+							{
+								"open": {
+									"sounds": [
+										"sounds/jenny/blowj/blowj"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/jenny/blowj/blowj"
+								]
+							}
+						]
+					},
+					{
+						"key": "jenny.s3x",
+						"children": [
+							{
+								"open": {
+									"sounds": [
+										"sounds/jenny/s3x/s3x"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/jenny/s3x/s3x"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

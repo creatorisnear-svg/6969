@@ -1,0 +1,1118 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBe\\entities\\jenny_blowj.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "52cc5d76_d6df_4374_863b_879d9322705c",
+	"file_version": 41,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "cumin:jenny_blowj",
+							"is_summonable": true,
+							"is_spawnable": false,
+							"is_experimental": false,
+							"animations": {
+								"tpjenny": "controller.animation.jennytp"
+							},
+							"scripts": {
+								"animate": [
+									"tpjenny"
+								]
+							}
+						},
+						"component_groups": {
+							"jennynormal": {
+								"minecraft:despawn": {}
+							}
+						},
+						"components": {
+							"minecraft:health": {
+								"value": 1
+							},
+							"minecraft:timer": {
+								"looping": false,
+								"time": 92,
+								"time_down_event": {
+									"event": "jennynormal"
+								}
+							},
+							"minecraft:physics": {},
+							"minecraft:knockback_resistance": {
+								"value": 1
+							},
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"on_damage": {},
+										"deals_damage": false
+									}
+								]
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {
+								"run_command": {
+									"command": [
+										"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+										"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+										"playsound jenny.blowj @a[r=7]"
+									]
+								}
+							},
+							"jennynormal": {
+								"add": {
+									"component_groups": [
+										"jennynormal"
+									]
+								},
+								"run_command": {
+									"command": [
+										"playanimation @p animation.humanoid.base_pose",
+										"effect @s invisibility 9999 1 true",
+										"structure load jenny ~ ~1 ~",
+										"kill @s"
+									]
+								}
+							},
+							"minecraft:entity_transformed": {
+								"run_command": {
+									"command": [
+										"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+										"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+										"playsound jenny.blowj @a[r=7]"
+									]
+								}
+							},
+							"minecraft:entity_born": {
+								"run_command": {
+									"command": [
+										"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+										"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+										"playsound jenny.blowj @a[r=7]"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_blowj",
+								"is_summonable": true,
+								"is_spawnable": false,
+								"is_experimental": false,
+								"animations": {
+									"tpjenny": "controller.animation.jennytp"
+								},
+								"scripts": {
+									"animate": [
+										"tpjenny"
+									]
+								}
+							},
+							"component_groups": {
+								"jennynormal": {
+									"minecraft:despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 1
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": 92,
+									"time_down_event": {
+										"event": "jennynormal"
+									}
+								},
+								"minecraft:physics": {},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"on_damage": {},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"jennynormal": {
+									"add": {
+										"component_groups": [
+											"jennynormal"
+										]
+									},
+									"run_command": {
+										"command": [
+											"playanimation @p animation.humanoid.base_pose",
+											"effect @s invisibility 9999 1 true",
+											"structure load jenny ~ ~1 ~",
+											"kill @s"
+										]
+									}
+								},
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"minecraft:entity_born": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "cumin:jenny_blowj",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_blowj",
+									"is_summonable": true,
+									"is_spawnable": false,
+									"is_experimental": false,
+									"animations": {
+										"tpjenny": "controller.animation.jennytp"
+									},
+									"scripts": {
+										"animate": [
+											"tpjenny"
+										]
+									}
+								},
+								"data": "false",
+								"key": "is_spawnable"
+							},
+							{
+								"data": "false",
+								"key": "is_experimental"
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_blowj",
+									"is_summonable": true,
+									"is_spawnable": false,
+									"is_experimental": false,
+									"animations": {
+										"tpjenny": "controller.animation.jennytp"
+									},
+									"scripts": {
+										"animate": [
+											"tpjenny"
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"tpjenny": "controller.animation.jennytp"
+								}
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_blowj",
+									"is_summonable": true,
+									"is_spawnable": false,
+									"is_experimental": false,
+									"animations": {
+										"tpjenny": "controller.animation.jennytp"
+									},
+									"scripts": {
+										"animate": [
+											"tpjenny"
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"tpjenny"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"tpjenny"
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_blowj",
+								"is_summonable": true,
+								"is_spawnable": false,
+								"is_experimental": false,
+								"animations": {
+									"tpjenny": "controller.animation.jennytp"
+								},
+								"scripts": {
+									"animate": [
+										"tpjenny"
+									]
+								}
+							},
+							"component_groups": {
+								"jennynormal": {
+									"minecraft:despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 1
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": 92,
+									"time_down_event": {
+										"event": "jennynormal"
+									}
+								},
+								"minecraft:physics": {},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"on_damage": {},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"jennynormal": {
+									"add": {
+										"component_groups": [
+											"jennynormal"
+										]
+									},
+									"run_command": {
+										"command": [
+											"playanimation @p animation.humanoid.base_pose",
+											"effect @s invisibility 9999 1 true",
+											"structure load jenny ~ ~1 ~",
+											"kill @s"
+										]
+									}
+								},
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"minecraft:entity_born": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"open": {
+									"jennynormal": {
+										"minecraft:despawn": {}
+									}
+								},
+								"key": "jennynormal",
+								"is_minified": true,
+								"children": {
+									"minecraft:despawn": {}
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_blowj",
+								"is_summonable": true,
+								"is_spawnable": false,
+								"is_experimental": false,
+								"animations": {
+									"tpjenny": "controller.animation.jennytp"
+								},
+								"scripts": {
+									"animate": [
+										"tpjenny"
+									]
+								}
+							},
+							"component_groups": {
+								"jennynormal": {
+									"minecraft:despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 1
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": 92,
+									"time_down_event": {
+										"event": "jennynormal"
+									}
+								},
+								"minecraft:physics": {},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"on_damage": {},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"jennynormal": {
+									"add": {
+										"component_groups": [
+											"jennynormal"
+										]
+									},
+									"run_command": {
+										"command": [
+											"playanimation @p animation.humanoid.base_pose",
+											"effect @s invisibility 9999 1 true",
+											"structure load jenny ~ ~1 ~",
+											"kill @s"
+										]
+									}
+								},
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"minecraft:entity_born": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": 92,
+										"time_down_event": {
+											"event": "jennynormal"
+										}
+									},
+									"minecraft:physics": {},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"on_damage": {},
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": 92,
+										"time_down_event": {
+											"event": "jennynormal"
+										}
+									},
+									"minecraft:physics": {},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"on_damage": {},
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:timer",
+								"children": [
+									{
+										"data": "false",
+										"key": "looping"
+									},
+									{
+										"open": {
+											"looping": false,
+											"time": 92,
+											"time_down_event": {
+												"event": "jennynormal"
+											}
+										},
+										"data": "92",
+										"key": "time"
+									},
+									{
+										"open": {
+											"looping": false,
+											"time": 92,
+											"time_down_event": {
+												"event": "jennynormal"
+											}
+										},
+										"key": "time_down_event",
+										"is_minified": true,
+										"children": {
+											"event": "jennynormal"
+										}
+									}
+								]
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": 92,
+										"time_down_event": {
+											"event": "jennynormal"
+										}
+									},
+									"minecraft:physics": {},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"on_damage": {},
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:knockback_resistance",
+								"is_minified": true,
+								"children": {
+									"value": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1
+									},
+									"minecraft:timer": {
+										"looping": false,
+										"time": 92,
+										"time_down_event": {
+											"event": "jennynormal"
+										}
+									},
+									"minecraft:physics": {},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"on_damage": {},
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"on_damage": {},
+													"deals_damage": false
+												}
+											]
+										},
+										"key": "triggers",
+										"children": [
+											{
+												"open": [
+													{
+														"on_damage": {},
+														"deals_damage": false
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"on_damage": {},
+													"deals_damage": false
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_blowj",
+								"is_summonable": true,
+								"is_spawnable": false,
+								"is_experimental": false,
+								"animations": {
+									"tpjenny": "controller.animation.jennytp"
+								},
+								"scripts": {
+									"animate": [
+										"tpjenny"
+									]
+								}
+							},
+							"component_groups": {
+								"jennynormal": {
+									"minecraft:despawn": {}
+								}
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 1
+								},
+								"minecraft:timer": {
+									"looping": false,
+									"time": 92,
+									"time_down_event": {
+										"event": "jennynormal"
+									}
+								},
+								"minecraft:physics": {},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"on_damage": {},
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"jennynormal": {
+									"add": {
+										"component_groups": [
+											"jennynormal"
+										]
+									},
+									"run_command": {
+										"command": [
+											"playanimation @p animation.humanoid.base_pose",
+											"effect @s invisibility 9999 1 true",
+											"structure load jenny ~ ~1 ~",
+											"kill @s"
+										]
+									}
+								},
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								},
+								"minecraft:entity_born": {
+									"run_command": {
+										"command": [
+											"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+											"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+											"playsound jenny.blowj @a[r=7]"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"jennynormal": {
+										"add": {
+											"component_groups": [
+												"jennynormal"
+											]
+										},
+										"run_command": {
+											"command": [
+												"playanimation @p animation.humanoid.base_pose",
+												"effect @s invisibility 9999 1 true",
+												"structure load jenny ~ ~1 ~",
+												"kill @s"
+											]
+										}
+									},
+									"minecraft:entity_transformed": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"minecraft:entity_born": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_spawned",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+														"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+														"playsound jenny.blowj @a[r=7]"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"jennynormal": {
+										"add": {
+											"component_groups": [
+												"jennynormal"
+											]
+										},
+										"run_command": {
+											"command": [
+												"playanimation @p animation.humanoid.base_pose",
+												"effect @s invisibility 9999 1 true",
+												"structure load jenny ~ ~1 ~",
+												"kill @s"
+											]
+										}
+									},
+									"minecraft:entity_transformed": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"minecraft:entity_born": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									}
+								},
+								"key": "jennynormal",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"jennynormal"
+												]
+											},
+											"run_command": {
+												"command": [
+													"playanimation @p animation.humanoid.base_pose",
+													"effect @s invisibility 9999 1 true",
+													"structure load jenny ~ ~1 ~",
+													"kill @s"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"jennynormal"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"jennynormal"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"jennynormal"
+												]
+											},
+											"run_command": {
+												"command": [
+													"playanimation @p animation.humanoid.base_pose",
+													"effect @s invisibility 9999 1 true",
+													"structure load jenny ~ ~1 ~",
+													"kill @s"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"playanimation @p animation.humanoid.base_pose",
+														"effect @s invisibility 9999 1 true",
+														"structure load jenny ~ ~1 ~",
+														"kill @s"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"playanimation @p animation.humanoid.base_pose",
+													"effect @s invisibility 9999 1 true",
+													"structure load jenny ~ ~1 ~",
+													"kill @s"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"jennynormal": {
+										"add": {
+											"component_groups": [
+												"jennynormal"
+											]
+										},
+										"run_command": {
+											"command": [
+												"playanimation @p animation.humanoid.base_pose",
+												"effect @s invisibility 9999 1 true",
+												"structure load jenny ~ ~1 ~",
+												"kill @s"
+											]
+										}
+									},
+									"minecraft:entity_transformed": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"minecraft:entity_born": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_transformed",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+														"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+														"playsound jenny.blowj @a[r=7]"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"jennynormal": {
+										"add": {
+											"component_groups": [
+												"jennynormal"
+											]
+										},
+										"run_command": {
+											"command": [
+												"playanimation @p animation.humanoid.base_pose",
+												"effect @s invisibility 9999 1 true",
+												"structure load jenny ~ ~1 ~",
+												"kill @s"
+											]
+										}
+									},
+									"minecraft:entity_transformed": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									},
+									"minecraft:entity_born": {
+										"run_command": {
+											"command": [
+												"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+												"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+												"playsound jenny.blowj @a[r=7]"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_born",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+														"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+														"playsound jenny.blowj @a[r=7]"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"playanimation @s animation.jn.blowjob animation.jn.blowjob",
+													"playanimation @p animation.jn.movearmsplayer animation.jn.movearmsplayer 8.7",
+													"playsound jenny.blowj @a[r=7]"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

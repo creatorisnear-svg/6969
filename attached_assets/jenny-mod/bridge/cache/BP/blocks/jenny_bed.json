@@ -1,0 +1,335 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBe\\blocks\\jenny_bed.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "98555325_01c9_459b_8e8b_f1cfa76d895d",
+	"file_version": 54,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.17.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.17.0",
+					"minecraft:block": {
+						"description": {
+							"identifier": "cumin:jenny_bed"
+						},
+						"components": {
+							"minecraft:destroy_time": 0.9,
+							"minecraft:block_light_emission": 0,
+							"minecraft:block_light_absorption": 0,
+							"minecraft:creative_category": {
+								"category": "items"
+							},
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "jennybed",
+									"render_method": "alpha_test",
+									"face_dimming": false,
+									"ambient_occlusion": false
+								}
+							},
+							"minecraft:geometry": "geometry.jenny_bed",
+							"minecraft:pick_collision": {
+								"size": [
+									16,
+									8,
+									16
+								],
+								"origin": [
+									-8,
+									0,
+									-8
+								]
+							},
+							"bridge:rotate_y_on_place": {
+								"flip": true
+							},
+							"minecraft:entity_collision": {
+								"size": [
+									32,
+									8,
+									32
+								],
+								"origin": [
+									-8,
+									0,
+									-8
+								]
+							},
+							"minecraft:ticking": {
+								"looping": true,
+								"range": [
+									0.1,
+									0.1
+								],
+								"on_tick": {
+									"event": "s3x"
+								}
+							}
+						},
+						"events": {
+							"s3x": {
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"event entity @e[type=cumin:jenny_nude_search_bed,r=3] in_bed",
+										"execute @e[type=cumin:jenny_s3x,r=5] ~ ~ ~ tp @p ^ ^-0.4 ^-1 facing ~ ~-0.5 ~",
+										"tp @e[type=cumin:jenny_s3x,r=3] ~ ~ ~"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "cumin:jenny_bed"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_bed"
+							},
+							"components": {
+								"minecraft:destroy_time": 0.9,
+								"minecraft:block_light_emission": 0,
+								"minecraft:block_light_absorption": 0,
+								"minecraft:creative_category": {
+									"category": "items"
+								},
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "jennybed",
+										"render_method": "alpha_test",
+										"face_dimming": false,
+										"ambient_occlusion": false
+									}
+								},
+								"minecraft:geometry": "geometry.jenny_bed",
+								"minecraft:pick_collision": {
+									"size": [
+										16,
+										8,
+										16
+									],
+									"origin": [
+										-8,
+										0,
+										-8
+									]
+								},
+								"bridge:rotate_y_on_place": {
+									"flip": true
+								},
+								"minecraft:entity_collision": {
+									"size": [
+										32,
+										8,
+										32
+									],
+									"origin": [
+										-8,
+										0,
+										-8
+									]
+								},
+								"minecraft:ticking": {
+									"looping": true,
+									"range": [
+										0.1,
+										0.1
+									],
+									"on_tick": {
+										"event": "s3x"
+									}
+								}
+							},
+							"events": {
+								"s3x": {
+									"run_command": {
+										"command": [
+											"gamerule sendcommandfeedback false",
+											"event entity @e[type=cumin:jenny_nude_search_bed,r=3] in_bed",
+											"execute @e[type=cumin:jenny_s3x,r=5] ~ ~ ~ tp @p ^ ^-0.4 ^-1 facing ~ ~-0.5 ~",
+											"tp @e[type=cumin:jenny_s3x,r=3] ~ ~ ~"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "0.9",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:block_light_emission"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"open": {
+									"minecraft:destroy_time": 0.9,
+									"minecraft:block_light_emission": 0,
+									"minecraft:block_light_absorption": 0,
+									"minecraft:creative_category": {
+										"category": "items"
+									},
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "jennybed",
+											"render_method": "alpha_test",
+											"face_dimming": false,
+											"ambient_occlusion": false
+										}
+									},
+									"minecraft:geometry": "geometry.jenny_bed",
+									"minecraft:pick_collision": {
+										"size": [
+											16,
+											8,
+											16
+										],
+										"origin": [
+											-8,
+											0,
+											-8
+										]
+									},
+									"bridge:rotate_y_on_place": {
+										"flip": true
+									},
+									"minecraft:entity_collision": {
+										"size": [
+											32,
+											8,
+											32
+										],
+										"origin": [
+											-8,
+											0,
+											-8
+										]
+									},
+									"minecraft:ticking": {
+										"looping": true,
+										"range": [
+											0.1,
+											0.1
+										],
+										"on_tick": {
+											"event": "s3x"
+										}
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"category": "items"
+								}
+							},
+							{
+								"key": "minecraft:material_instances",
+								"is_minified": true,
+								"children": {
+									"*": {
+										"texture": "jennybed",
+										"render_method": "alpha_test",
+										"face_dimming": false,
+										"ambient_occlusion": false
+									}
+								}
+							},
+							{
+								"data": "geometry.jenny_bed",
+								"key": "minecraft:geometry"
+							},
+							{
+								"key": "minecraft:pick_collision",
+								"is_minified": true,
+								"children": {
+									"size": [
+										16,
+										8,
+										16
+									],
+									"origin": [
+										-8,
+										0,
+										-8
+									]
+								}
+							},
+							{
+								"key": "bridge:rotate_y_on_place",
+								"is_minified": true,
+								"children": {
+									"flip": true
+								}
+							},
+							{
+								"key": "minecraft:entity_collision",
+								"is_minified": true,
+								"children": {
+									"size": [
+										32,
+										8,
+										32
+									],
+									"origin": [
+										-8,
+										0,
+										-8
+									]
+								}
+							},
+							{
+								"key": "minecraft:ticking",
+								"is_minified": true,
+								"children": {
+									"looping": true,
+									"range": [
+										0.1,
+										0.1
+									],
+									"on_tick": {
+										"event": "s3x"
+									}
+								}
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"s3x": {
+								"run_command": {
+									"command": [
+										"gamerule sendcommandfeedback false",
+										"event entity @e[type=cumin:jenny_nude_search_bed,r=3] in_bed",
+										"execute @e[type=cumin:jenny_s3x,r=5] ~ ~ ~ tp @p ^ ^-0.4 ^-1 facing ~ ~-0.5 ~",
+										"tp @e[type=cumin:jenny_s3x,r=3] ~ ~ ~"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

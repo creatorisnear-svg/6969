@@ -1,0 +1,7 @@
+##bridge-file-version: #3
+item.spawn_egg.entity.cumin:jenny_struc.name=Jenny
+entity.cumin:jenny.name=Jenny
+entity.cumin:jenny_nude.name=Jenny
+entity.cumin:jenny_nude_blowj.name=Jenny
+entity.cumin:jenny_blowj.name=Jenny
+tile.cumin:jenny_bed.name=Jenny Bed

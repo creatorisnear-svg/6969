@@ -1,0 +1,33 @@
+//bridge-file-version: #8
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cumin:jenny_nude_blowj",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/jenny"
+			},
+			"geometry": {
+				"default": "geometry.jenny_nude"
+			},
+			"animations": {
+				"blowj": "animation.jn.blowjob"
+			},
+			"scripts": {
+				"animate": [
+					"blowj"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 35
+			}
+		}
+	}
+}

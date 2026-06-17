@@ -1,0 +1,152 @@
+{
+	"RP/manifest.json": {
+		"data": {}
+	},
+	"BP/manifest.json": {
+		"data": {}
+	},
+	"BP/entities/jenny.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/jenny_tp.json": {
+		"data": {}
+	},
+	"RP/entity/jenny_blowj.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_blowj.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/player_tp.json": {
+		"data": {}
+	},
+	"BP/items/jenny.json": {
+		"data": {}
+	},
+	"RP/entity/jenny_nude.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_nude.json": {
+		"data": {}
+	},
+	"RP/entity/jenny_nude_blowj.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_nude_blowj.json": {
+		"data": {}
+	},
+	"RP/entity/jenny.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_nude_struc.json": {
+		"data": {}
+	},
+	"RP/sounds/sound_definitions.json": {
+		"data": {}
+	},
+	"RP/sounds.json": {
+		"data": {}
+	},
+	"RP/animations/jenny2.animation.json": {
+		"data": {}
+	},
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"BP/features/jenny_house_feature_mcstructure.json": {
+		"data": {}
+	},
+	"BP/feature_rules/jenny_house_feature_rule.json": {
+		"data": {}
+	},
+	"BP/items/jenny_nude.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_nude_search_bed.json": {
+		"data": {}
+	},
+	"RP/entity/jenny_nude_search_bed.json": {
+		"data": {}
+	},
+	"BP/entities/jenny_s3x.json": {
+		"data": {}
+	},
+	"RP/entity/jenny_s3x.json": {
+		"data": {}
+	},
+	"RP/animations/jennydressed.animation.json": {
+		"data": {}
+	},
+	"BP/blocks/jenny_bed.json": {
+		"data": {
+			"component@bridge:rotate_y_on_place": {
+				"minecraft:block": {
+					"description": {
+						"properties": {
+							"bridge:block_rotation": [
+								2,
+								3,
+								4,
+								5
+							]
+						}
+					},
+					"permutations": [
+						{
+							"condition": "query.block_property('bridge:block_rotation') == 2",
+							"components": {
+								"minecraft:rotation": [
+									0,
+									180,
+									0
+								]
+							}
+						},
+						{
+							"condition": "query.block_property('bridge:block_rotation') == 3",
+							"components": {
+								"minecraft:rotation": [
+									0,
+									0,
+									0
+								]
+							}
+						},
+						{
+							"condition": "query.block_property('bridge:block_rotation') == 4",
+							"components": {
+								"minecraft:rotation": [
+									0,
+									270,
+									0
+								]
+							}
+						},
+						{
+							"condition": "query.block_property('bridge:block_rotation') == 5",
+							"components": {
+								"minecraft:rotation": [
+									0,
+									90,
+									0
+								]
+							}
+						}
+					],
+					"components": {
+						"minecraft:on_player_placing": {
+							"event": "bridge:update_rotation"
+						}
+					},
+					"events": {
+						"bridge:update_rotation": {
+							"set_block_property": {
+								"bridge:block_rotation": "query.cardinal_facing_2d"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

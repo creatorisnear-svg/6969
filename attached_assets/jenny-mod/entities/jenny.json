@@ -1,0 +1,250 @@
+//bridge-file-version: #64
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cumin:jenny",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"bed": "controller.animation.jennybed"
+			},
+			"scripts": {
+				"animate": [
+					"bed"
+				]
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"jenny"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 20
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.mount_pathing": {
+				"priority": 2,
+				"speed_multiplier": 1.5,
+				"target_dist": 0,
+				"track_target": true
+			},
+			"minecraft:behavior.tempt": {
+				"items": [
+					"minecraft:gold_ingot",
+					"minecraft:diamond",
+					"minecraft:emerald"
+				],
+				"priority": 1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:npc": {
+				"npc_data": {
+					"portrait_offsets": {
+						"translate": [
+							-7,
+							50,
+							0
+						],
+						"scale": [
+							1.75,
+							1.75,
+							1.75
+						]
+					},
+					"picker_offsets": {
+						"translate": [
+							0,
+							20,
+							0
+						],
+						"scale": [
+							1.7,
+							1.7,
+							1.7
+						]
+					},
+					"skin_list": [
+						{
+							"variant": 0
+						},
+						{
+							"variant": 1
+						},
+						{
+							"variant": 2
+						},
+						{
+							"variant": 3
+						},
+						{
+							"variant": 4
+						},
+						{
+							"variant": 5
+						},
+						{
+							"variant": 6
+						},
+						{
+							"variant": 7
+						},
+						{
+							"variant": 8
+						},
+						{
+							"variant": 9
+						},
+						{
+							"variant": 10
+						},
+						{
+							"variant": 11
+						},
+						{
+							"variant": 12
+						},
+						{
+							"variant": 13
+						},
+						{
+							"variant": 14
+						},
+						{
+							"variant": 15
+						},
+						{
+							"variant": 16
+						},
+						{
+							"variant": 17
+						},
+						{
+							"variant": 18
+						},
+						{
+							"variant": 19
+						}
+					]
+				}
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/jenny.json"
+			}
+		},
+		"component_groups": {
+			"blowj": {
+				"minecraft:transformation": {
+					"into": "cumin:jenny_blowj"
+				}
+			},
+			"str1p": {
+				"minecraft:transformation": {
+					"into": "cumin:jenny_nude_struc",
+					"delay": {
+						"value": 4.76
+					}
+				}
+			}
+		},
+		"events": {
+			"blowj": {
+				"add": {
+					"component_groups": [
+						"blowj"
+					]
+				}
+			},
+			"str1p": {
+				"add": {
+					"component_groups": [
+						"str1p"
+					]
+				},
+				"run_command": {
+					"command": [
+						"effect @s slowness 9999 255 true",
+						"playsound jenny.iddle @a[r=10]"
+					]
+				}
+			},
+			"sexoxd": {
+				"run_command": {
+					"command": [
+						"effect @s invisibility 9 1 true",
+						"structure load jenny_search ~ ~1 ~",
+						"kill @s"
+					]
+				}
+			}
+		}
+	}
+}

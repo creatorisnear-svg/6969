@@ -1,0 +1,13 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {	
+    "cmd": { "textures": [ "textures/items/cmd" ] },
+    "cmd1": { "textures": [ "textures/items/cmd1" ] },
+    "cmd2": { "textures": [ "textures/items/cmd2" ] },
+    "cmd3": { "textures": [ "textures/items/cmd3" ] },
+    "cmd4": { "textures": [ "textures/items/cmd4" ] },
+    "cmd5": { "textures": [ "textures/items/cmd5" ] },
+    "cmd6": { "textures": [ "textures/items/cmd6" ] }
+  }
+}

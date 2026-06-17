@@ -1,0 +1,82 @@
+//bridge-file-version: #48
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cumin:jenny_s3x",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"jennynormal": {
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 50,
+				"time_down_event": {
+					"event": "jennynormal"
+				}
+			},
+			"minecraft:physics": {},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {},
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.jn.in_bed animation.jn.in_bed",
+						"playanimation @p animation.player.s3x animation.player.s3x"
+					]
+				}
+			},
+			"jennynormal": {
+				"add": {
+					"component_groups": [
+						"jennynormal"
+					]
+				},
+				"run_command": {
+					"command": [
+						"playanimation @p animation.humanoid.base_pose",
+						"effect @s invisibility 9999 1 true",
+						"structure load jenny ~ ~1 ~",
+						"kill @s"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.jn.in_bed animation.jn.in_bed",
+						"playanimation @p animation.player.s3x animation.player.s3x"
+					]
+				}
+			},
+			"minecraft:entity_born": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.jn.in_bed animation.jn.in_bed",
+						"playanimation @p animation.player.s3x animation.player.s3x"
+					]
+				}
+			}
+		}
+	}
+}

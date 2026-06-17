@@ -1,0 +1,366 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\JennyModRes\\entity\\jenny_nude_blowj.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "8c8ce1e0_e0b4_4f29_9af5_791b3cd59f91",
+	"file_version": 8,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "cumin:jenny_nude_blowj",
+							"materials": {
+								"default": "skeleton"
+							},
+							"textures": {
+								"default": "textures/entity/jenny"
+							},
+							"geometry": {
+								"default": "geometry.jenny_nude"
+							},
+							"animations": {
+								"blowj": "animation.jn.blowjob"
+							},
+							"scripts": {
+								"animate": [
+									"blowj"
+								]
+							},
+							"render_controllers": [
+								"controller.render.default"
+							],
+							"spawn_egg": {
+								"texture": "spawn_egg",
+								"texture_index": 35
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_nude_blowj",
+								"materials": {
+									"default": "skeleton"
+								},
+								"textures": {
+									"default": "textures/entity/jenny"
+								},
+								"geometry": {
+									"default": "geometry.jenny_nude"
+								},
+								"animations": {
+									"blowj": "animation.jn.blowjob"
+								},
+								"scripts": {
+									"animate": [
+										"blowj"
+									]
+								},
+								"render_controllers": [
+									"controller.render.default"
+								],
+								"spawn_egg": {
+									"texture": "spawn_egg",
+									"texture_index": 35
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"data": "cumin:jenny_nude_blowj",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "skeleton"
+								}
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/jenny"
+								}
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.jenny_nude"
+								}
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"blowj": "animation.jn.blowjob"
+								}
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"blowj"
+											]
+										},
+										"key": "animate",
+										"is_minified": true,
+										"children": [
+											"blowj"
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.default"
+								]
+							},
+							{
+								"open": {
+									"identifier": "cumin:jenny_nude_blowj",
+									"materials": {
+										"default": "skeleton"
+									},
+									"textures": {
+										"default": "textures/entity/jenny"
+									},
+									"geometry": {
+										"default": "geometry.jenny_nude"
+									},
+									"animations": {
+										"blowj": "animation.jn.blowjob"
+									},
+									"scripts": {
+										"animate": [
+											"blowj"
+										]
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg",
+										"texture_index": 35
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"texture": "spawn_egg",
+									"texture_index": 35
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

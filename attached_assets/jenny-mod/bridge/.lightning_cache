@@ -1,0 +1,388 @@
+{
+	"entity": {
+		"BP/entities/jenny.json": {
+			"events": [
+				"blowj",
+				"str1p",
+				"sexoxd"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny"
+			],
+			"animation_references": [
+				"bed"
+			],
+			"families": [
+				"mob",
+				"jenny"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_blowj.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"jennynormal",
+				"minecraft:entity_transformed",
+				"minecraft:entity_born"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_blowj"
+			],
+			"animation_references": [
+				"tpjenny"
+			],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_nude.json": {
+			"events": [
+				"blowj",
+				"sexoxd"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_nude"
+			],
+			"animation_references": [],
+			"families": [
+				"mob",
+				"jenny"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_nude_blowj.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"jennynormal",
+				"minecraft:entity_transformed",
+				"minecraft:entity_born"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_nude_blowj"
+			],
+			"animation_references": [
+				"tpjenny"
+			],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_nude_struc.json": {
+			"events": [
+				"minecraft:entity_transformed"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_nude_struc"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_nude_search_bed.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"in_bed",
+				"minecraft:entity_born"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_nude_search_bed"
+			],
+			"animation_references": [],
+			"families": [
+				"mob",
+				"jenny"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/jenny_s3x.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"jennynormal",
+				"minecraft:entity_transformed",
+				"minecraft:entity_born"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"cumin:jenny_s3x"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"function": {
+		"62ad0653_34de_4c47_b58d_52c9179b7ac8": {},
+		"8c7899fe_92c9_4c75_833d_d4e25e225c09": {},
+		"47bef670_af7e_49d1_bbc9_c0963c714905": {},
+		"0af68c35_50f6_49ba_a507_956427ec9b27": {},
+		"52cc5d76_d6df_4374_863b_879d9322705c": {},
+		"a527eedf_f37a_43e6_a858_e0cdf78672fb": {},
+		"c13b05a6_07c3_4477_8605_6006da02f0bd": {},
+		"0211f09a_0a07_4a15_a2d1_6cd4da69c396": {},
+		"51dad317_8780_43bb_855e_c9323d233a9d": {},
+		"ce8603ca_f176_4f9a_960a_789d60b52ff4": {},
+		"02ac3739_d713_45be_885a_bfae15dfa50a": {},
+		"BP/functions/clear_jenny.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/clear_jenny_nud2.mcfunction": {
+			"custom_commands": []
+		},
+		"1f88412e_5aff_4d0b_a416_ef73ec7d927e": {},
+		"e9e250b7_f841_428d_abd9_30c5436c3b31": {},
+		"ab79ea2f_909f_407b_af22_14ca2b6900fb": {},
+		"33bdcf06_25fa_485c_9b1a_885f3bbc70db": {},
+		"9f7cb087_56e1_49cf_ad53_302270630284": {},
+		"36908f50_a678_49e2_ae77_6754ca847ee1": {},
+		"229fea60_7b49_4627_9f3f_07c46407bb77": {},
+		"98555325_01c9_459b_8e8b_f1cfa76d895d": {}
+	},
+	"animation_controller": {
+		"BP/animation_controllers/jenny_tp.json": {
+			"ids": [
+				"controller.animation.jennytp"
+			],
+			"custom_commands": []
+		},
+		"BP/animation_controllers/player_tp.json": {
+			"ids": [
+				"controller.animation.playertp"
+			],
+			"custom_commands": []
+		}
+	},
+	"client_entity": {
+		"RP/entity/jenny_blowj.json": {
+			"identifiers": [
+				"cumin:jenny_nude_blowj"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"blowj"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/jenny_nude.json": {
+			"identifiers": [
+				"cumin:jenny_nude_search_bed"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"moving",
+				"idle",
+				"strip",
+				"payment",
+				"blowjob",
+				"playermovearm"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/jenny_nude_blowj.json": {
+			"identifiers": [
+				"cumin:jenny_s3x"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"blowj"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/jenny.json": {
+			"identifiers": [
+				"cumin:jenny"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"moving",
+				"idle",
+				"strip",
+				"payment",
+				"blowjob",
+				"playermovearm",
+				"str1p"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/jenny_nude_search_bed.json": {
+			"identifiers": [
+				"cumin:jenny_nude_search_bed"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"moving",
+				"idle",
+				"strip",
+				"payment",
+				"blowjob",
+				"playermovearm"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/jenny_s3x.json": {
+			"identifiers": [
+				"cumin:jenny_s3x"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"blowj"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	},
+	"item": {
+		"BP/items/jenny.json": {
+			"identifiers": [
+				"cumin:jenny"
+			],
+			"custom_commands": []
+		},
+		"BP/items/jenny_nude.json": {
+			"identifiers": [
+				"cumin:jenny_nude"
+			],
+			"custom_commands": []
+		}
+	},
+	"sound_definition": {
+		"RP/sounds/sound_definitions.json": {
+			"ids": [
+				"jenny.iddle",
+				"jenny.blowj",
+				"jenny.s3x"
+			]
+		}
+	},
+	"rp_animation": {
+		"RP/animations/jenny2.animation.json": {
+			"ids": [
+				"animation.jenny.blowjobsuck",
+				"animation.jenny.blowjobthrust",
+				"animation.jenny.blowjobcum"
+			]
+		},
+		"RP/animations/jennydressed.animation.json": {
+			"ids": [
+				"animation.jn.move",
+				"animation.jn.idle",
+				"animation.jn.strip",
+				"animation.jn.payment",
+				"animation.jn.playermovearm",
+				"animation.jn.blowjob",
+				"animation.jn.movearmsplayer",
+				"animation.jn.in_bed"
+			]
+		}
+	},
+	"block": {
+		"BP/blocks/jenny_bed.json": {
+			"identifiers": [
+				"cumin:jenny_bed"
+			],
+			"events": [
+				"s3x"
+			],
+			"recipe_tags": [],
+			"custom_components": [
+				"bridge:rotate_y_on_place"
+			],
+			"custom_commands": []
+		}
+	},
+	"feature": {
+		"BP/features/jenny_house_feature_mcstructure.json": {
+			"identifiers": [
+				"cumin:jenny_house_feature_mcstructure"
+			]
+		}
+	},
+	"feature_rule": {
+		"BP/feature_rules/jenny_house_feature_rule.json": {
+			"identifiers": [
+				"cumin:jenny_house_feature_rule"
+			]
+		}
+	}
+}

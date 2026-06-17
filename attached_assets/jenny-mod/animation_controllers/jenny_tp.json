@@ -1,0 +1,31 @@
+//bridge-file-version: #26
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jennytp": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jennytp": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function tpjenny"
+					]
+				},
+				"jennytp": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function tpjenny"
+					]
+				}
+			}
+		}
+	}
+}

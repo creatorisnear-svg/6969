@@ -1,0 +1,246 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBeh\\animation_controllers\\player_tp.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "c13b05a6_07c3_4477_8605_6006da02f0bd",
+	"file_version": 23,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.playertp": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"jennytp": "(1.0)"
+										}
+									],
+									"on_entry": [
+										"/function tpplayer"
+									]
+								},
+								"jennytp": {
+									"transitions": [
+										{
+											"default": "(1.0)"
+										}
+									],
+									"on_entry": [
+										"/function tpplayer"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.playertp": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"jennytp": "(1.0)"
+											}
+										],
+										"on_entry": [
+											"/function tpplayer"
+										]
+									},
+									"jennytp": {
+										"transitions": [
+											{
+												"default": "(1.0)"
+											}
+										],
+										"on_entry": [
+											"/function tpplayer"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.playertp",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"jennytp": "(1.0)"
+												}
+											],
+											"on_entry": [
+												"/function tpplayer"
+											]
+										},
+										"jennytp": {
+											"transitions": [
+												{
+													"default": "(1.0)"
+												}
+											],
+											"on_entry": [
+												"/function tpplayer"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"jennytp": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/function tpplayer"
+												]
+											},
+											"jennytp": {
+												"transitions": [
+													{
+														"default": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/function tpplayer"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"jennytp": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/function tpplayer"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"jennytp": "(1.0)"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"jennytp": "(1.0)"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"transitions": [
+														{
+															"jennytp": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/function tpplayer"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/function tpplayer"
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"jennytp": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/function tpplayer"
+												]
+											},
+											"jennytp": {
+												"transitions": [
+													{
+														"default": "(1.0)"
+													}
+												],
+												"on_entry": [
+													"/function tpplayer"
+												]
+											}
+										},
+										"key": "jennytp",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "(1.0)"
+														}
+													],
+													"on_entry": [
+														"/function tpplayer"
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "(1.0)"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "(1.0)"
+														}
+													}
+												]
+											},
+											{
+												"key": "on_entry",
+												"is_minified": true,
+												"children": [
+													"/function tpplayer"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

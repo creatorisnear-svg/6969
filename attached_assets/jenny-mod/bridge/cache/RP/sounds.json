@@ -1,0 +1,417 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\JennyModRes\\sounds.json",
+	"file_type": "client_sound",
+	"format_version": 1,
+	"file_uuid": "7d6f2344_ecc5_4ca7_8208_13cb7c6d084d",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"key": "individual_event_sounds",
+				"is_minified": true,
+				"children": {
+					"events": {}
+				}
+			},
+			{
+				"key": "block_sounds",
+				"is_minified": true,
+				"children": {}
+			},
+			{
+				"open": {
+					"individual_event_sounds": {
+						"events": {}
+					},
+					"block_sounds": {},
+					"entity_sounds": {
+						"defaults": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						},
+						"entities": {
+							"cumin:jenny": {
+								"volume": 1,
+								"events": {
+									"ambient": "jenny.iddle"
+								},
+								"pitch": [
+									1,
+									1
+								]
+							},
+							"cumin:jenny_nude": {
+								"volume": 1,
+								"events": {
+									"ambient": "jenny.iddle"
+								},
+								"pitch": [
+									1,
+									1
+								]
+							}
+						}
+					}
+				},
+				"key": "entity_sounds",
+				"children": [
+					{
+						"key": "defaults",
+						"is_minified": true,
+						"children": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						}
+					},
+					{
+						"open": {
+							"defaults": {
+								"volume": 1,
+								"pitch": [
+									0.8,
+									1.2
+								],
+								"events": {
+									"fall.big": {
+										"sound": "damage.fallbig",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"fall.small": {
+										"sound": "damage.fallsmall",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"splash": {
+										"sound": "random.splash",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"swim": {
+										"sound": "random.swim",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"fizz": {
+										"sound": "random.fizz",
+										"volume": 0.7,
+										"pitch": [
+											1.2,
+											2
+										]
+									},
+									"drink": {
+										"sound": "random.drink",
+										"volume": 0.5,
+										"pitch": [
+											0.9,
+											1
+										]
+									},
+									"eat": {
+										"sound": "random.eat",
+										"volume": [
+											0.5,
+											1.5
+										],
+										"pitch": [
+											0.8,
+											1.2
+										]
+									},
+									"ambient": {},
+									"flop": {},
+									"hurt": "game.player.hurt",
+									"death": "game.player.die",
+									"ambient.in.water": {},
+									"hurt.in.water": {},
+									"death.in.water": {},
+									"ambient.in.raid": {}
+								}
+							},
+							"entities": {
+								"cumin:jenny": {
+									"volume": 1,
+									"events": {
+										"ambient": "jenny.iddle"
+									},
+									"pitch": [
+										1,
+										1
+									]
+								},
+								"cumin:jenny_nude": {
+									"volume": 1,
+									"events": {
+										"ambient": "jenny.iddle"
+									},
+									"pitch": [
+										1,
+										1
+									]
+								}
+							}
+						},
+						"key": "entities",
+						"children": [
+							{
+								"open": {
+									"cumin:jenny": {
+										"volume": 1,
+										"events": {
+											"ambient": "jenny.iddle"
+										},
+										"pitch": [
+											1,
+											1
+										]
+									},
+									"cumin:jenny_nude": {
+										"volume": 1,
+										"events": {
+											"ambient": "jenny.iddle"
+										},
+										"pitch": [
+											1,
+											1
+										]
+									}
+								},
+								"key": "cumin:jenny",
+								"children": [
+									{
+										"data": "1",
+										"key": "volume"
+									},
+									{
+										"open": {
+											"volume": 1,
+											"events": {
+												"ambient": "jenny.iddle"
+											},
+											"pitch": [
+												1,
+												1
+											]
+										},
+										"key": "events",
+										"is_minified": true,
+										"children": {
+											"ambient": "jenny.iddle"
+										}
+									},
+									{
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											1,
+											1
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"cumin:jenny": {
+										"volume": 1,
+										"events": {
+											"ambient": "jenny.iddle"
+										},
+										"pitch": [
+											1,
+											1
+										]
+									},
+									"cumin:jenny_nude": {
+										"volume": 1,
+										"events": {
+											"ambient": "jenny.iddle"
+										},
+										"pitch": [
+											1,
+											1
+										]
+									}
+								},
+								"key": "cumin:jenny_nude",
+								"children": [
+									{
+										"data": "1",
+										"key": "volume"
+									},
+									{
+										"open": {
+											"volume": 1,
+											"events": {
+												"ambient": "jenny.iddle"
+											},
+											"pitch": [
+												1,
+												1
+											]
+										},
+										"key": "events",
+										"is_minified": true,
+										"children": {
+											"ambient": "jenny.iddle"
+										}
+									},
+									{
+										"open": {
+											"volume": 1,
+											"events": {
+												"ambient": "jenny.iddle"
+											},
+											"pitch": [
+												1,
+												1
+											]
+										},
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											1,
+											1
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

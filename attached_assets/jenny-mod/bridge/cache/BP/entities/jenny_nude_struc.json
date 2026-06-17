@@ -1,0 +1,217 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBe\\entities\\jenny_nude_struc.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "02ac3739_d713_45be_885a_bfae15dfa50a",
+	"file_version": 53,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "cumin:jenny_nude_struc",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:health": {
+								"value": 0
+							},
+							"minecraft:physics": {}
+						},
+						"events": {
+							"minecraft:entity_transformed": {
+								"run_command": {
+									"command": [
+										"structure load jenny_nude ~ ~1 ~"
+									]
+								}
+							}
+						}
+					}
+				},
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "cumin:jenny_nude_struc",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:health": {
+								"value": 0
+							},
+							"minecraft:physics": {}
+						},
+						"events": {
+							"minecraft:entity_transformed": {
+								"run_command": {
+									"command": [
+										"structure load jenny_nude ~ ~1 ~"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_nude_struc",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 0
+								},
+								"minecraft:physics": {}
+							},
+							"events": {
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"structure load jenny_nude ~ ~1 ~"
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "cumin:jenny_nude_struc",
+							"is_spawnable": false,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_nude_struc",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 0
+								},
+								"minecraft:physics": {}
+							},
+							"events": {
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"structure load jenny_nude ~ ~1 ~"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 0
+									},
+									"minecraft:physics": {}
+								},
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 0
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_nude_struc",
+								"is_spawnable": false,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:health": {
+									"value": 0
+								},
+								"minecraft:physics": {}
+							},
+							"events": {
+								"minecraft:entity_transformed": {
+									"run_command": {
+										"command": [
+											"structure load jenny_nude ~ ~1 ~"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"minecraft:entity_transformed": {
+										"run_command": {
+											"command": [
+												"structure load jenny_nude ~ ~1 ~"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_transformed",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"command": [
+													"structure load jenny_nude ~ ~1 ~"
+												]
+											}
+										},
+										"key": "run_command",
+										"children": [
+											{
+												"open": {
+													"command": [
+														"structure load jenny_nude ~ ~1 ~"
+													]
+												},
+												"key": "command",
+												"is_minified": true,
+												"children": [
+													"structure load jenny_nude ~ ~1 ~"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

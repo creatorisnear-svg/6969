@@ -1,0 +1,107 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\JennyModRe\\manifest.json",
+	"file_type": "manifest_rp",
+	"format_version": 1,
+	"file_uuid": "d34f0adb_abf4_450c_85f7_f4ffeff0ab65",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "2",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "JennyModRes",
+						"description": "SexAddon | By Amogus Tuturuturututu",
+						"uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "resources",
+							"uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					]
+				},
+				"key": "header",
+				"is_minified": true,
+				"children": {
+					"name": "JennyModRes",
+					"description": "SexAddon | By Amogus Tuturuturututu",
+					"uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
+					"version": [
+						1,
+						0,
+						0
+					],
+					"min_engine_version": [
+						1,
+						13,
+						0
+					]
+				}
+			},
+			{
+				"open": {
+					"format_version": 2,
+					"header": {
+						"name": "JennyModRes",
+						"description": "SexAddon | By Amogus Tuturuturututu",
+						"uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
+						"version": [
+							1,
+							0,
+							0
+						],
+						"min_engine_version": [
+							1,
+							13,
+							0
+						]
+					},
+					"modules": [
+						{
+							"type": "resources",
+							"uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
+							"version": [
+								1,
+								0,
+								0
+							]
+						}
+					]
+				},
+				"key": "modules",
+				"is_minified": true,
+				"children": [
+					{
+						"type": "resources",
+						"uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
+						"version": [
+							1,
+							0,
+							0
+						]
+					}
+				]
+			}
+		]
+	}
+}

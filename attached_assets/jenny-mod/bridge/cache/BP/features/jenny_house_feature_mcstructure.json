@@ -1,0 +1,82 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBeh\\features\\jenny_house_feature_mcstructure.json",
+	"file_type": "feature",
+	"format_version": 1,
+	"file_uuid": "15404b1b_2e2d_4544_89f8_ddc552c97d80",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:structure_template_feature": {
+						"description": {
+							"identifier": "cumin:jenny_house_feature_mcstructure"
+						},
+						"structure_name": "mystructure:jenny_house",
+						"adjustment_radius": 8,
+						"constraints": {
+							"grounded": {}
+						},
+						"facing_direction": "south"
+					}
+				},
+				"key": "minecraft:structure_template_feature",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_house_feature_mcstructure"
+							},
+							"structure_name": "mystructure:jenny_house",
+							"adjustment_radius": 8,
+							"constraints": {
+								"grounded": {}
+							},
+							"facing_direction": "south"
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "cumin:jenny_house_feature_mcstructure"
+						}
+					},
+					{
+						"data": "mystructure:jenny_house",
+						"key": "structure_name"
+					},
+					{
+						"data": "8",
+						"key": "adjustment_radius"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "cumin:jenny_house_feature_mcstructure"
+							},
+							"structure_name": "mystructure:jenny_house",
+							"adjustment_radius": 8,
+							"constraints": {
+								"grounded": {}
+							},
+							"facing_direction": "south"
+						},
+						"key": "constraints",
+						"is_minified": true,
+						"children": {
+							"grounded": {}
+						}
+					},
+					{
+						"data": "south",
+						"key": "facing_direction"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+//bridge-file-version: #10
+{
+	"format_version": "1.16.100",
+	"sound_definitions": {
+		"jenny.iddle": {
+			"sounds": [
+				"sounds/jenny/giggle0",
+				"sounds/jenny/giggle1",
+				"sounds/jenny/giggle2",
+				"sounds/jenny/giggle3",
+				"sounds/jenny/giggle4"
+			]
+		},
+		"jenny.blowj": {
+			"sounds": [
+				"sounds/jenny/blowj/blowj"
+			]
+		},
+		"jenny.s3x": {
+			"sounds": [
+				"sounds/jenny/s3x/s3x"
+			]
+		}
+	}
+}

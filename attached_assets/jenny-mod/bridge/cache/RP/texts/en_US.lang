@@ -1,0 +1,8 @@
+{
+	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\JennyModRe\\texts\\en_US.lang",
+	"file_type": "client_lang",
+	"format_version": 0,
+	"file_uuid": "ef6edb42_dced_4e12_9dce_ad47fb95a622",
+	"file_version": 3,
+	"cache_content": "item.spawn_egg.entity.cumin:jenny_struc.name=Jenny\r\nentity.cumin:jenny.name=Jenny\r\nentity.cumin:jenny_nude.name=Jenny\r\nentity.cumin:jenny_nude_blowj.name=Jenny\r\nentity.cumin:jenny_blowj.name=Jenny\r\ntile.cumin:jenny_bed.name=Jenny Bed"
+}
