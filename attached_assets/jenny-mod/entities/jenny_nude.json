@@ -75,7 +75,8 @@
                                         "minecraft:diamond",
                                         "minecraft:emerald"
                                 ],
-                                "priority": 1
+                                "priority": 1,
+                                "speed_multiplier": 1.25
                         },
                         "minecraft:behavior.random_stroll": {
                                 "priority": 6,
@@ -97,99 +98,6 @@
                         "minecraft:conditional_bandwidth_optimization": {},
                         "minecraft:movement": {
                                 "value": 0.25
-                        },
-                        "minecraft:npc": {
-                                "npc_data": {
-                                        "portrait_offsets": {
-                                                "translate": [
-                                                        -7,
-                                                        50,
-                                                        0
-                                                ],
-                                                "scale": [
-                                                        1.75,
-                                                        1.75,
-                                                        1.75
-                                                ]
-                                        },
-                                        "picker_offsets": {
-                                                "translate": [
-                                                        0,
-                                                        20,
-                                                        0
-                                                ],
-                                                "scale": [
-                                                        1.7,
-                                                        1.7,
-                                                        1.7
-                                                ]
-                                        },
-                                        "skin_list": [
-                                                {
-                                                        "variant": 0
-                                                },
-                                                {
-                                                        "variant": 1
-                                                },
-                                                {
-                                                        "variant": 2
-                                                },
-                                                {
-                                                        "variant": 3
-                                                },
-                                                {
-                                                        "variant": 4
-                                                },
-                                                {
-                                                        "variant": 5
-                                                },
-                                                {
-                                                        "variant": 6
-                                                },
-                                                {
-                                                        "variant": 7
-                                                },
-                                                {
-                                                        "variant": 8
-                                                },
-                                                {
-                                                        "variant": 9
-                                                },
-                                                {
-                                                        "variant": 10
-                                                },
-                                                {
-                                                        "variant": 11
-                                                },
-                                                {
-                                                        "variant": 12
-                                                },
-                                                {
-                                                        "variant": 13
-                                                },
-                                                {
-                                                        "variant": 14
-                                                },
-                                                {
-                                                        "variant": 15
-                                                },
-                                                {
-                                                        "variant": 16
-                                                },
-                                                {
-                                                        "variant": 17
-                                                },
-                                                {
-                                                        "variant": 18
-                                                },
-                                                {
-                                                        "variant": 19
-                                                }
-                                        ]
-                                }
-                        },
-                        "minecraft:loot": {
-                                "table": "loot_tables/jenny.json"
                         },
                         "minecraft:interact": {
                                 "interactions": [
@@ -219,19 +127,9 @@
                                         {
                                                 "on_interact": {
                                                         "filters": {
-                                                                "all_of": [
-                                                                        {
-                                                                                "test": "is_family",
-                                                                                "subject": "other",
-                                                                                "value": "player"
-                                                                        },
-                                                                        {
-                                                                                "test": "has_equipment",
-                                                                                "subject": "other",
-                                                                                "domain": "hand",
-                                                                                "value": "minecraft:air"
-                                                                        }
-                                                                ]
+                                                                "test": "is_family",
+                                                                "subject": "other",
+                                                                "value": "player"
                                                         },
                                                         "event": "blowj",
                                                         "target": "self"
@@ -239,6 +137,9 @@
                                                 "interact_text": "action.interact.talk"
                                         }
                                 ]
+                        },
+                        "minecraft:loot": {
+                                "table": "loot_tables/jenny.json"
                         }
                 },
                 "component_groups": {

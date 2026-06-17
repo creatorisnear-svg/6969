@@ -1,30 +1,29 @@
-//bridge-file-version: #2
 {
-	"format_version": 2,
-	"header": {
-		"name": "JennyModRes",
-		"description": "SexAddon | By Amogus Tuturuturututu",
-		"uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
-		"version": [
-			1,
-			0,
-			0
-		],
-		"min_engine_version": [
-			1,
-			13,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "resources",
-			"uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	]
+        "format_version": 2,
+        "header": {
+                "name": "Jenny v2",
+                "description": "Jenny v2 Resource Pack",
+                "uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
+                "version": [
+                        2,
+                        0,
+                        0
+                ],
+                "min_engine_version": [
+                        1,
+                        16,
+                        0
+                ]
+        },
+        "modules": [
+                {
+                        "type": "resources",
+                        "uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
+                        "version": [
+                                2,
+                                0,
+                                0
+                        ]
+                }
+        ]
 }

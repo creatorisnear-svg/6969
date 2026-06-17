@@ -1,46 +1,46 @@
 {
-	"format_version": 2,
-	"header": {
-		"name": "JennyModBeh",
-		"description": "SexAddon | By Amogus Tuturuturututu",
-		"uuid": "942b5fa8-4e20-47cf-b71a-43df28e01b5a",
-		"version": [
-			1,
-			0,
-			0
-		],
-		"min_engine_version": [
-			1,
-			13,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "data",
-			"uuid": "fe4bd6a7-f3cc-499f-b8e8-e95cd6a323aa",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	],
-	"dependencies": [
-		{
-			"version": [
-				1,
-				0,
-				0
-			],
-			"uuid": "8e430597-42b0-4075-a97c-917743c8fdd3"
-		}
-	],
-	"metadata": {
-		"generated_with": {
-			"bridge": [
-				"1.8.3"
-			]
-		}
-	}
+        "format_version": 2,
+        "header": {
+                "name": "Jenny v2",
+                "description": "Jenny v2 Behavior Pack",
+                "uuid": "942b5fa8-4e20-47cf-b71a-43df28e01b5a",
+                "version": [
+                        2,
+                        0,
+                        0
+                ],
+                "min_engine_version": [
+                        1,
+                        16,
+                        0
+                ]
+        },
+        "modules": [
+                {
+                        "type": "data",
+                        "uuid": "fe4bd6a7-f3cc-499f-b8e8-e95cd6a323aa",
+                        "version": [
+                                2,
+                                0,
+                                0
+                        ]
+                }
+        ],
+        "dependencies": [
+                {
+                        "version": [
+                                2,
+                                0,
+                                0
+                        ],
+                        "uuid": "8e430597-42b0-4075-a97c-917743c8fdd3"
+                }
+        ],
+        "metadata": {
+                "generated_with": {
+                        "bridge": [
+                                "1.8.3"
+                        ]
+                }
+        }
 }

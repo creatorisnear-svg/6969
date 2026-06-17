@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "NE4xTze33LH5gvVWc2Y5j"
+uri = "file://exports/jenny-v2.zip"
+type = "unspecified"
+title = "jenny-v2.mcaddon — download, then rename .zip → .mcaddon and import into Minecraft"
