@@ -24,7 +24,14 @@
                         "sex_phase": {
                                 "minecraft:timer": {
                                         "looping": false,
-                                        "time": 60,
+                                        "time": 50,
+                                        "time_down_event": {"event": "to_climax"}
+                                }
+                        },
+                        "climax_phase": {
+                                "minecraft:timer": {
+                                        "looping": false,
+                                        "time": 6,
                                         "time_down_event": {"event": "end_scene"}
                                 }
                         },
@@ -40,16 +47,14 @@
                 },
                 "events": {
                         "minecraft:entity_spawned": {
-                                "add": {
-                                        "component_groups": ["lift_phase"]
-                                },
+                                "add": {"component_groups": ["lift_phase"]},
                                 "run_command": {
                                         "command": [
                                                 "playanimation @s animation.jn.skirt_lift animation.jn.skirt_lift 3",
                                                 "playanimation @p animation.player.sleep_sex animation.player.sleep_sex",
                                                 "event entity @e[type=cumin:player_cock,r=5] to_sleep_sex",
                                                 "playsound jenny.iddle @a[r=8]",
-                                                "effect @p slowness 9999 255 true"
+                                                "effect @p slowness 9999 128 true"
                                         ]
                                 }
                         },
@@ -63,10 +68,31 @@
                                         ]
                                 }
                         },
+                        "to_climax": {
+                                "remove": {"component_groups": ["sex_phase"]},
+                                "add": {"component_groups": ["climax_phase"]},
+                                "run_command": {
+                                        "command": [
+                                                "effect @p slowness 10 255 true",
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "playsound jenny.s3x @a[r=10]"
+                                        ]
+                                }
+                        },
                         "end_scene": {
                                 "add": {"component_groups": ["despawn"]},
                                 "run_command": {
                                         "command": [
+                                                "particle minecraft:water_splash_particle_manual ~ ~0.8 ~",
+                                                "particle minecraft:water_splash_particle_manual ~ ~0.85 ~",
+                                                "particle minecraft:snowflake_particle ~ ~0.8 ~",
+                                                "particle minecraft:snowflake_particle ~ ~0.85 ~",
+                                                "particle minecraft:water_splash_particle_manual ~ ~0.75 ~",
+                                                "particle minecraft:snowflake_particle ~ ~0.75 ~",
+                                                "particle minecraft:water_splash_particle_manual ~ ~0.9 ~",
+                                                "particle minecraft:snowflake_particle ~ ~0.9 ~",
+                                                "particle minecraft:water_splash_particle_manual ~ ~0.8 ~0.1",
+                                                "particle minecraft:snowflake_particle ~ ~0.8 ~0.1",
                                                 "playanimation @p animation.humanoid.base_pose",
                                                 "effect @p clear",
                                                 "kill @e[type=cumin:player_cock,r=5]",

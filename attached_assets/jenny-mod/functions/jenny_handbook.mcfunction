@@ -1,0 +1,4 @@
+scoreboard objectives add jenny_book dummy
+scoreboard players add @a jenny_book 0
+give @a[scores={jenny_book=0}] written_book 1 0 {"title":"Jenny Handbook","author":"Jenny Mod","pages":["§6Jenny Mod v2§r\n\nWelcome! Jenny is a special NPC who lives in her house.\n\nRun:\n/function jenny_house\nto build her home nearby!","§eGifts§r\n\n§b▸ Diamond§r\nUnlocks blowjob scene\n\n§a▸ Emerald§r\nJenny strips for you\n\n§6▸ Gold Ingot§r\nShe dances + 5 XP","§eInteractions§r\n\nEmpty hand\n= Talk to Jenny\n\nSneak + interact\n= Tell Jenny to sleep\n\nSleeping Jenny + empty hand\n= Start bed scene","§eBed Scenes§r\n\nNude Jenny (empty hand)\n= Cowgirl then Missionary - 60 seconds\n\nSleeping Jenny\n= Sleep sex with climax ending","§eTips§r\n\nJenny auto-respawns if she goes missing!\n\n/function spawn_jenny\nCalls Jenny to you\n\n/function jenny_house\nRebuilds her house"]}
+scoreboard players set @a[scores={jenny_book=0}] jenny_book 1
