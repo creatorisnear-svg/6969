@@ -1,11 +1,11 @@
 {
         "format_version": 2,
         "header": {
-                "name": "Jenny v3",
-                "description": "Jenny v3 Resource Pack",
+                "name": "Jenny v4",
+                "description": "Jenny v4 Resource Pack",
                 "uuid": "8e430597-42b0-4075-a97c-917743c8fdd3",
                 "version": [
-                        2,
+                        4,
                         0,
                         0
                 ],
@@ -20,7 +20,7 @@
                         "type": "resources",
                         "uuid": "2951acd0-46ca-4560-8aec-34818f93e52e",
                         "version": [
-                                2,
+                                4,
                                 0,
                                 0
                         ]

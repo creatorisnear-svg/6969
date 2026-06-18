@@ -1,11 +1,11 @@
 {
         "format_version": 2,
         "header": {
-                "name": "Jenny v3",
-                "description": "Jenny v3 Behavior Pack",
+                "name": "Jenny v4",
+                "description": "Jenny v4 Behavior Pack",
                 "uuid": "942b5fa8-4e20-47cf-b71a-43df28e01b5a",
                 "version": [
-                        2,
+                        4,
                         0,
                         0
                 ],
@@ -20,7 +20,7 @@
                         "type": "data",
                         "uuid": "fe4bd6a7-f3cc-499f-b8e8-e95cd6a323aa",
                         "version": [
-                                2,
+                                4,
                                 0,
                                 0
                         ]

@@ -10,7 +10,9 @@
                                 "tpjenny": "controller.animation.jennytp"
                         },
                         "scripts": {
-                                "animate": ["tpjenny"]
+                                "animate": [
+                                        "tpjenny"
+                                ]
                         }
                 },
                 "component_groups": {
@@ -18,40 +20,61 @@
                                 "minecraft:timer": {
                                         "looping": false,
                                         "time": 3,
-                                        "time_down_event": {"event": "to_sex"}
+                                        "time_down_event": {
+                                                "event": "to_sex"
+                                        }
                                 }
                         },
                         "sex_phase": {
                                 "minecraft:timer": {
                                         "looping": false,
                                         "time": 50,
-                                        "time_down_event": {"event": "to_climax"}
+                                        "time_down_event": {
+                                                "event": "to_climax"
+                                        }
                                 }
                         },
                         "climax_phase": {
                                 "minecraft:timer": {
                                         "looping": false,
                                         "time": 6,
-                                        "time_down_event": {"event": "end_scene"}
+                                        "time_down_event": {
+                                                "event": "end_scene"
+                                        }
                                 }
                         },
-                        "despawn": {"minecraft:despawn": {}}
+                        "despawn": {
+                                "minecraft:despawn": {}
+                        }
                 },
                 "components": {
-                        "minecraft:health": {"value": 1},
+                        "minecraft:health": {
+                                "value": 1
+                        },
                         "minecraft:physics": {},
-                        "minecraft:knockback_resistance": {"value": 1},
+                        "minecraft:knockback_resistance": {
+                                "value": 1
+                        },
                         "minecraft:damage_sensor": {
-                                "triggers": [{"on_damage": {}, "deals_damage": false}]
+                                "triggers": [
+                                        {
+                                                "on_damage": {},
+                                                "deals_damage": false
+                                        }
+                                ]
                         }
                 },
                 "events": {
                         "minecraft:entity_spawned": {
-                                "add": {"component_groups": ["lift_phase"]},
+                                "add": {
+                                        "component_groups": [
+                                                "lift_phase"
+                                        ]
+                                },
                                 "run_command": {
                                         "command": [
                                                 "playanimation @s animation.jn.skirt_lift animation.jn.skirt_lift 3",
-                                                "playanimation @p animation.player.sleep_sex animation.player.sleep_sex",
+                                                "playanimation @p animation.humanoid.base_pose",
                                                 "event entity @e[type=cumin:player_cock,r=5] to_sleep_sex",
                                                 "playsound jenny.iddle @a[r=8]",
                                                 "effect @p slowness 9999 128 true"
@@ -59,8 +82,16 @@
                                 }
                         },
                         "to_sex": {
-                                "remove": {"component_groups": ["lift_phase"]},
-                                "add": {"component_groups": ["sex_phase"]},
+                                "remove": {
+                                        "component_groups": [
+                                                "lift_phase"
+                                        ]
+                                },
+                                "add": {
+                                        "component_groups": [
+                                                "sex_phase"
+                                        ]
+                                },
                                 "run_command": {
                                         "command": [
                                                 "playanimation @s animation.jn.sleep_sex animation.jn.sleep_sex",
@@ -69,8 +100,16 @@
                                 }
                         },
                         "to_climax": {
-                                "remove": {"component_groups": ["sex_phase"]},
-                                "add": {"component_groups": ["climax_phase"]},
+                                "remove": {
+                                        "component_groups": [
+                                                "sex_phase"
+                                        ]
+                                },
+                                "add": {
+                                        "component_groups": [
+                                                "climax_phase"
+                                        ]
+                                },
                                 "run_command": {
                                         "command": [
                                                 "effect @p slowness 10 255 true",
@@ -80,7 +119,11 @@
                                 }
                         },
                         "end_scene": {
-                                "add": {"component_groups": ["despawn"]},
+                                "add": {
+                                        "component_groups": [
+                                                "despawn"
+                                        ]
+                                },
                                 "run_command": {
                                         "command": [
                                                 "particle minecraft:water_splash_particle_manual ~ ~0.8 ~",

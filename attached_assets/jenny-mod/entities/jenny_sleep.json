@@ -8,12 +8,24 @@
                         "is_experimental": false
                 },
                 "components": {
-                        "minecraft:health": {"value": 20},
+                        "minecraft:health": {
+                                "value": 20
+                        },
                         "minecraft:physics": {},
-                        "minecraft:pushable": {"is_pushable": true, "is_pushable_by_piston": true},
-                        "minecraft:knockback_resistance": {"value": 1},
+                        "minecraft:pushable": {
+                                "is_pushable": true,
+                                "is_pushable_by_piston": true
+                        },
+                        "minecraft:knockback_resistance": {
+                                "value": 1
+                        },
                         "minecraft:damage_sensor": {
-                                "triggers": {"cause": "fall", "deals_damage": false}
+                                "triggers": [
+                                        {
+                                                "cause": "all",
+                                                "deals_damage": false
+                                        }
+                                ]
                         },
                         "minecraft:leashable": {
                                 "soft_distance": 4,
@@ -21,7 +33,12 @@
                                 "max_distance": 10
                         },
                         "minecraft:nameable": {},
-                        "minecraft:type_family": {"family": ["mob", "jenny"]},
+                        "minecraft:type_family": {
+                                "family": [
+                                        "mob",
+                                        "jenny"
+                                ]
+                        },
                         "minecraft:interact": {
                                 "interactions": [
                                         {
@@ -34,11 +51,16 @@
                                                         "event": "sleep_sex",
                                                         "target": "self"
                                                 },
-                                                "interact_text": "action.interact.sleep_sex"
+                                                "interact_text": "action.interact.sleep_sex",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         }
-                                ]
+                                ],
+                                "max_distance": 3
                         },
-                        "minecraft:loot": {"table": "loot_tables/jenny.json"}
+                        "minecraft:loot": {
+                                "table": "loot_tables/jenny.json"
+                        }
                 },
                 "events": {
                         "sleep_sex": {
