@@ -127,6 +127,52 @@
                                         {
                                                 "on_interact": {
                                                         "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:diamond"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "blowj",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_diamond"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:gold_ingot"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "gift_gold",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_gold"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
                                                                 "test": "is_family",
                                                                 "subject": "other",
                                                                 "value": "player"
@@ -154,6 +200,15 @@
                                 "add": {
                                         "component_groups": [
                                                 "blowj"
+                                        ]
+                                }
+                        },
+                        "gift_gold": {
+                                "run_command": {
+                                        "command": [
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "particle minecraft:heart_particle ~ ~1 ~",
+                                                "xp 5 @p"
                                         ]
                                 }
                         },

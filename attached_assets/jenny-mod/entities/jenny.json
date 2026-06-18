@@ -122,6 +122,29 @@
                                                                                 "test": "has_equipment",
                                                                                 "subject": "other",
                                                                                 "domain": "hand",
+                                                                                "value": "minecraft:diamond"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "blowj_dia",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_diamond"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
                                                                                 "value": "minecraft:emerald"
                                                                         }
                                                                 ]
@@ -135,11 +158,34 @@
                                         {
                                                 "on_interact": {
                                                         "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:gold_ingot"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "gift_gold",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_gold"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
                                                                 "test": "is_family",
                                                                 "subject": "other",
                                                                 "value": "player"
                                                         },
-                                                        "event": "str1p",
+                                                        "event": "chat_jenny",
                                                         "target": "self"
                                                 },
                                                 "interact_text": "action.interact.talk"
@@ -152,6 +198,11 @@
                 },
                 "component_groups": {
                         "blowj": {
+                                "minecraft:transformation": {
+                                        "into": "cumin:jenny_blowj"
+                                }
+                        },
+                        "blowj_dia": {
                                 "minecraft:transformation": {
                                         "into": "cumin:jenny_blowj"
                                 }
@@ -173,6 +224,19 @@
                                         ]
                                 }
                         },
+                        "blowj_dia": {
+                                "add": {
+                                        "component_groups": [
+                                                "blowj_dia"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "effect @s slowness 9999 255 true",
+                                                "playsound jenny.iddle @a[r=10]"
+                                        ]
+                                }
+                        },
                         "str1p": {
                                 "add": {
                                         "component_groups": [
@@ -183,6 +247,23 @@
                                         "command": [
                                                 "effect @s slowness 9999 255 true",
                                                 "playsound jenny.iddle @a[r=10]"
+                                        ]
+                                }
+                        },
+                        "gift_gold": {
+                                "run_command": {
+                                        "command": [
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "particle minecraft:heart_particle ~ ~1 ~",
+                                                "xp 5 @p"
+                                        ]
+                                }
+                        },
+                        "chat_jenny": {
+                                "run_command": {
+                                        "command": [
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "particle minecraft:heart_particle ~ ~1 ~"
                                         ]
                                 }
                         },
