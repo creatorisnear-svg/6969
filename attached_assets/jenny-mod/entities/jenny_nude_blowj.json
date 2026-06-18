@@ -65,7 +65,7 @@
 					"command": [
 						"playanimation @p animation.humanoid.base_pose",
 						"effect @s invisibility 9999 1 true",
-						"structure load jenny ~ ~1 ~",
+						"summon cumin:jenny ~ ~1 ~",
 						"kill @s"
 					]
 				}

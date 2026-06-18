@@ -1,3 +1,2 @@
 #bridge-file-version: #3
-structure load jenny ~ ~1 ~
- 
+summon cumin:jenny ~ ~1 ~

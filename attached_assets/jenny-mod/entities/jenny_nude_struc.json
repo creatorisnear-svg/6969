@@ -18,7 +18,7 @@
 			"minecraft:entity_transformed": {
 				"run_command": {
 					"command": [
-						"structure load jenny_nude ~ ~1 ~"
+						"summon cumin:jenny_nude ~ ~1 ~"
 					]
 				}
 			}

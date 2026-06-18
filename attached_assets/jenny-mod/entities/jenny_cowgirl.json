@@ -102,7 +102,7 @@
                                                 "playanimation @p animation.humanoid.base_pose",
                                                 "effect @p clear",
                                                 "kill @e[type=cumin:player_cock,r=5]",
-                                                "structure load jenny ~ ~1 ~",
+                                                "summon cumin:jenny ~ ~1 ~",
                                                 "kill @s"
                                         ]
                                 }
