@@ -6,3 +6,9 @@ id = "NE4xTze33LH5gvVWc2Y5j"
 uri = "file://exports/jenny-v2.zip"
 type = "unspecified"
 title = "jenny-v2.zip — fully updated"
+
+[[outputs]]
+id = "I_2218QE-lXHZ50t92X8T"
+uri = "file://exports/jenny-v3.zip"
+type = "unspecified"
+title = "jenny-v3.zip"

@@ -1,6 +1,6 @@
 scoreboard objectives add jenny_book dummy
 scoreboard players add @a jenny_book 0
-title @a[scores={jenny_book=0}] title {"rawtext":[{"text":"§6§lJenny Mod v2"}]}
+title @a[scores={jenny_book=0}] title {"rawtext":[{"text":"§6§lJenny Mod v3"}]}
 title @a[scores={jenny_book=0}] subtitle {"rawtext":[{"text":"§eHandbook — read chat for guide!"}]}
 tellraw @a[scores={jenny_book=0}] {"rawtext":[{"text":"§6§l====== JENNY HANDBOOK ======"}]}
 tellraw @a[scores={jenny_book=0}] {"rawtext":[{"text":"§e▸ Gifts (hold item, then tap/right-click Jenny):"}]}
