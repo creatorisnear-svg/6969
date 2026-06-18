@@ -108,6 +108,7 @@
                                 "value": 0.25
                         },
                         "minecraft:interact": {
+                                "max_distance": 3,
                                 "interactions": [
                                         {
                                                 "on_interact": {
