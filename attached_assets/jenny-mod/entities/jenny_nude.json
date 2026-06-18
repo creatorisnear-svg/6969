@@ -208,7 +208,8 @@
                                         "command": [
                                                 "playsound jenny.iddle @a[r=8]",
                                                 "particle minecraft:heart_particle ~ ~1 ~",
-                                                "xp 5 @p"
+                                                "xp 5 @p",
+                                                "playanimation @s animation.jn.payment animation.jn.idle 0.5"
                                         ]
                                 }
                         },
@@ -225,7 +226,7 @@
                                 "run_command": {
                                         "command": [
                                                 "effect @s invisibility 9 1 true",
-                                                "structure load jenny_search ~ ~1 ~",
+                                                "structure load mystructure:jenny_search ~ ~1 ~",
                                                 "kill @s"
                                         ]
                                 }

@@ -1,3 +1,1 @@
-#bridge-file-version: #4
-structure load jenny_nude ~ ~1 ~
- 
+structure load mystructure:jenny_nude ~ ~1 ~

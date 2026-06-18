@@ -293,7 +293,7 @@
                                 "run_command": {
                                         "command": [
                                                 "effect @s invisibility 9 1 true",
-                                                "structure load jenny_search ~ ~1 ~",
+                                                "structure load mystructure:jenny_search ~ ~1 ~",
                                                 "kill @s"
                                         ]
                                 }

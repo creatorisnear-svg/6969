@@ -1,2329 +1,312 @@
+//bridge-file-version: #64
 {
-	"file_path": "C:\\Users\\user\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\JennyModBe\\entities\\jenny.json",
-	"file_type": "entity",
-	"format_version": 1,
-	"file_uuid": "8c7899fe_92c9_4c75_833d_d4e25e225c09",
-	"file_version": 64,
-	"cache_content": {
-		"children": [
-			{
-				"open": {
-					"format_version": "1.16.100",
-					"minecraft:entity": {
-						"description": {
-							"identifier": "cumin:jenny",
-							"is_spawnable": false,
-							"is_summonable": true,
-							"is_experimental": false,
-							"animations": {
-								"bed": "controller.animation.jennybed"
-							},
-							"scripts": {
-								"animate": [
-									"bed"
-								]
-							}
-						},
-						"components": {
-							"minecraft:is_hidden_when_invisible": {},
-							"minecraft:type_family": {
-								"family": [
-									"mob",
-									"jenny"
-								]
-							},
-							"minecraft:breathable": {
-								"total_supply": 15,
-								"suffocate_time": 0
-							},
-							"minecraft:collision_box": {
-								"width": 0.6,
-								"height": 1.8
-							},
-							"minecraft:nameable": {},
-							"minecraft:health": {
-								"value": 20
-							},
-							"minecraft:hurt_on_condition": {
-								"damage_conditions": [
-									{
-										"filters": {
-											"test": "in_lava",
-											"subject": "self",
-											"operator": "==",
-											"value": true
-										},
-										"cause": "lava",
-										"damage_per_tick": 4
-									}
-								]
-							},
-							"minecraft:damage_sensor": {
-								"triggers": {
-									"cause": "fall",
-									"deals_damage": false
-								}
-							},
-							"minecraft:leashable": {
-								"soft_distance": 4,
-								"hard_distance": 6,
-								"max_distance": 10
-							},
-							"minecraft:navigation.walk": {
-								"can_path_over_water": true,
-								"avoid_damage_blocks": true
-							},
-							"minecraft:movement.basic": {},
-							"minecraft:jump.static": {},
-							"minecraft:can_climb": {},
-							"minecraft:behavior.float": {
-								"priority": 0
-							},
-							"minecraft:behavior.mount_pathing": {
-								"priority": 2,
-								"speed_multiplier": 1.5,
-								"target_dist": 0,
-								"track_target": true
-							},
-							"minecraft:behavior.tempt": {
-								"items": [
-									"minecraft:gold_ingot",
-									"minecraft:diamond",
-									"minecraft:emerald"
-								],
-								"priority": 1
-							},
-							"minecraft:behavior.random_stroll": {
-								"priority": 6,
-								"speed_multiplier": 1
-							},
-							"minecraft:behavior.look_at_player": {
-								"priority": 7,
-								"look_distance": 6,
-								"probability": 0.02
-							},
-							"minecraft:behavior.random_look_around": {
-								"priority": 8
-							},
-							"minecraft:physics": {},
-							"minecraft:pushable": {
-								"is_pushable": true,
-								"is_pushable_by_piston": true
-							},
-							"minecraft:conditional_bandwidth_optimization": {},
-							"minecraft:movement": {
-								"value": 0.25
-							},
-							"minecraft:npc": {
-								"npc_data": {
-									"portrait_offsets": {
-										"translate": [
-											-7,
-											50,
-											0
-										],
-										"scale": [
-											1.75,
-											1.75,
-											1.75
-										]
-									},
-									"picker_offsets": {
-										"translate": [
-											0,
-											20,
-											0
-										],
-										"scale": [
-											1.7,
-											1.7,
-											1.7
-										]
-									},
-									"skin_list": [
-										{
-											"variant": 0
-										},
-										{
-											"variant": 1
-										},
-										{
-											"variant": 2
-										},
-										{
-											"variant": 3
-										},
-										{
-											"variant": 4
-										},
-										{
-											"variant": 5
-										},
-										{
-											"variant": 6
-										},
-										{
-											"variant": 7
-										},
-										{
-											"variant": 8
-										},
-										{
-											"variant": 9
-										},
-										{
-											"variant": 10
-										},
-										{
-											"variant": 11
-										},
-										{
-											"variant": 12
-										},
-										{
-											"variant": 13
-										},
-										{
-											"variant": 14
-										},
-										{
-											"variant": 15
-										},
-										{
-											"variant": 16
-										},
-										{
-											"variant": 17
-										},
-										{
-											"variant": 18
-										},
-										{
-											"variant": 19
-										}
-									]
-								}
-							},
-							"minecraft:loot": {
-								"table": "loot_tables/jenny.json"
-							}
-						},
-						"component_groups": {
-							"blowj": {
-								"minecraft:transformation": {
-									"into": "cumin:jenny_blowj"
-								}
-							},
-							"str1p": {
-								"minecraft:transformation": {
-									"into": "cumin:jenny_nude_struc",
-									"delay": {
-										"value": 4.76
-									}
-								}
-							}
-						},
-						"events": {
-							"blowj": {
-								"add": {
-									"component_groups": [
-										"blowj"
-									]
-								}
-							},
-							"str1p": {
-								"add": {
-									"component_groups": [
-										"str1p"
-									]
-								},
-								"run_command": {
-									"command": [
-										"effect @s slowness 9999 255 true",
-										"playsound jenny.iddle @a[r=10]"
-									]
-								}
-							},
-							"sexoxd": {
-								"run_command": {
-									"command": [
-										"effect @s invisibility 9 1 true",
-										"structure load jenny_search ~ ~1 ~",
-										"kill @s"
-									]
-								}
-							}
-						}
-					}
-				},
-				"data": "1.16.100",
-				"key": "format_version"
-			},
-			{
-				"open": {
-					"format_version": "1.16.100",
-					"minecraft:entity": {
-						"description": {
-							"identifier": "cumin:jenny",
-							"is_spawnable": false,
-							"is_summonable": true,
-							"is_experimental": false,
-							"animations": {
-								"bed": "controller.animation.jennybed"
-							},
-							"scripts": {
-								"animate": [
-									"bed"
-								]
-							}
-						},
-						"components": {
-							"minecraft:is_hidden_when_invisible": {},
-							"minecraft:type_family": {
-								"family": [
-									"mob",
-									"jenny"
-								]
-							},
-							"minecraft:breathable": {
-								"total_supply": 15,
-								"suffocate_time": 0
-							},
-							"minecraft:collision_box": {
-								"width": 0.6,
-								"height": 1.8
-							},
-							"minecraft:nameable": {},
-							"minecraft:health": {
-								"value": 20
-							},
-							"minecraft:hurt_on_condition": {
-								"damage_conditions": [
-									{
-										"filters": {
-											"test": "in_lava",
-											"subject": "self",
-											"operator": "==",
-											"value": true
-										},
-										"cause": "lava",
-										"damage_per_tick": 4
-									}
-								]
-							},
-							"minecraft:damage_sensor": {
-								"triggers": {
-									"cause": "fall",
-									"deals_damage": false
-								}
-							},
-							"minecraft:leashable": {
-								"soft_distance": 4,
-								"hard_distance": 6,
-								"max_distance": 10
-							},
-							"minecraft:navigation.walk": {
-								"can_path_over_water": true,
-								"avoid_damage_blocks": true
-							},
-							"minecraft:movement.basic": {},
-							"minecraft:jump.static": {},
-							"minecraft:can_climb": {},
-							"minecraft:behavior.float": {
-								"priority": 0
-							},
-							"minecraft:behavior.mount_pathing": {
-								"priority": 2,
-								"speed_multiplier": 1.5,
-								"target_dist": 0,
-								"track_target": true
-							},
-							"minecraft:behavior.tempt": {
-								"items": [
-									"minecraft:gold_ingot",
-									"minecraft:diamond",
-									"minecraft:emerald"
-								],
-								"priority": 1
-							},
-							"minecraft:behavior.random_stroll": {
-								"priority": 6,
-								"speed_multiplier": 1
-							},
-							"minecraft:behavior.look_at_player": {
-								"priority": 7,
-								"look_distance": 6,
-								"probability": 0.02
-							},
-							"minecraft:behavior.random_look_around": {
-								"priority": 8
-							},
-							"minecraft:physics": {},
-							"minecraft:pushable": {
-								"is_pushable": true,
-								"is_pushable_by_piston": true
-							},
-							"minecraft:conditional_bandwidth_optimization": {},
-							"minecraft:movement": {
-								"value": 0.25
-							},
-							"minecraft:npc": {
-								"npc_data": {
-									"portrait_offsets": {
-										"translate": [
-											-7,
-											50,
-											0
-										],
-										"scale": [
-											1.75,
-											1.75,
-											1.75
-										]
-									},
-									"picker_offsets": {
-										"translate": [
-											0,
-											20,
-											0
-										],
-										"scale": [
-											1.7,
-											1.7,
-											1.7
-										]
-									},
-									"skin_list": [
-										{
-											"variant": 0
-										},
-										{
-											"variant": 1
-										},
-										{
-											"variant": 2
-										},
-										{
-											"variant": 3
-										},
-										{
-											"variant": 4
-										},
-										{
-											"variant": 5
-										},
-										{
-											"variant": 6
-										},
-										{
-											"variant": 7
-										},
-										{
-											"variant": 8
-										},
-										{
-											"variant": 9
-										},
-										{
-											"variant": 10
-										},
-										{
-											"variant": 11
-										},
-										{
-											"variant": 12
-										},
-										{
-											"variant": 13
-										},
-										{
-											"variant": 14
-										},
-										{
-											"variant": 15
-										},
-										{
-											"variant": 16
-										},
-										{
-											"variant": 17
-										},
-										{
-											"variant": 18
-										},
-										{
-											"variant": 19
-										}
-									]
-								}
-							},
-							"minecraft:loot": {
-								"table": "loot_tables/jenny.json"
-							}
-						},
-						"component_groups": {
-							"blowj": {
-								"minecraft:transformation": {
-									"into": "cumin:jenny_blowj"
-								}
-							},
-							"str1p": {
-								"minecraft:transformation": {
-									"into": "cumin:jenny_nude_struc",
-									"delay": {
-										"value": 4.76
-									}
-								}
-							}
-						},
-						"events": {
-							"blowj": {
-								"add": {
-									"component_groups": [
-										"blowj"
-									]
-								}
-							},
-							"str1p": {
-								"add": {
-									"component_groups": [
-										"str1p"
-									]
-								},
-								"run_command": {
-									"command": [
-										"effect @s slowness 9999 255 true",
-										"playsound jenny.iddle @a[r=10]"
-									]
-								}
-							},
-							"sexoxd": {
-								"run_command": {
-									"command": [
-										"effect @s invisibility 9 1 true",
-										"structure load jenny_search ~ ~1 ~",
-										"kill @s"
-									]
-								}
-							}
-						}
-					}
-				},
-				"key": "minecraft:entity",
-				"children": [
-					{
-						"open": {
-							"description": {
-								"identifier": "cumin:jenny",
-								"is_spawnable": false,
-								"is_summonable": true,
-								"is_experimental": false,
-								"animations": {
-									"bed": "controller.animation.jennybed"
-								},
-								"scripts": {
-									"animate": [
-										"bed"
-									]
-								}
-							},
-							"components": {
-								"minecraft:is_hidden_when_invisible": {},
-								"minecraft:type_family": {
-									"family": [
-										"mob",
-										"jenny"
-									]
-								},
-								"minecraft:breathable": {
-									"total_supply": 15,
-									"suffocate_time": 0
-								},
-								"minecraft:collision_box": {
-									"width": 0.6,
-									"height": 1.8
-								},
-								"minecraft:nameable": {},
-								"minecraft:health": {
-									"value": 20
-								},
-								"minecraft:hurt_on_condition": {
-									"damage_conditions": [
-										{
-											"filters": {
-												"test": "in_lava",
-												"subject": "self",
-												"operator": "==",
-												"value": true
-											},
-											"cause": "lava",
-											"damage_per_tick": 4
-										}
-									]
-								},
-								"minecraft:damage_sensor": {
-									"triggers": {
-										"cause": "fall",
-										"deals_damage": false
-									}
-								},
-								"minecraft:leashable": {
-									"soft_distance": 4,
-									"hard_distance": 6,
-									"max_distance": 10
-								},
-								"minecraft:navigation.walk": {
-									"can_path_over_water": true,
-									"avoid_damage_blocks": true
-								},
-								"minecraft:movement.basic": {},
-								"minecraft:jump.static": {},
-								"minecraft:can_climb": {},
-								"minecraft:behavior.float": {
-									"priority": 0
-								},
-								"minecraft:behavior.mount_pathing": {
-									"priority": 2,
-									"speed_multiplier": 1.5,
-									"target_dist": 0,
-									"track_target": true
-								},
-								"minecraft:behavior.tempt": {
-									"items": [
-										"minecraft:gold_ingot",
-										"minecraft:diamond",
-										"minecraft:emerald"
-									],
-									"priority": 1
-								},
-								"minecraft:behavior.random_stroll": {
-									"priority": 6,
-									"speed_multiplier": 1
-								},
-								"minecraft:behavior.look_at_player": {
-									"priority": 7,
-									"look_distance": 6,
-									"probability": 0.02
-								},
-								"minecraft:behavior.random_look_around": {
-									"priority": 8
-								},
-								"minecraft:physics": {},
-								"minecraft:pushable": {
-									"is_pushable": true,
-									"is_pushable_by_piston": true
-								},
-								"minecraft:conditional_bandwidth_optimization": {},
-								"minecraft:movement": {
-									"value": 0.25
-								},
-								"minecraft:npc": {
-									"npc_data": {
-										"portrait_offsets": {
-											"translate": [
-												-7,
-												50,
-												0
-											],
-											"scale": [
-												1.75,
-												1.75,
-												1.75
-											]
-										},
-										"picker_offsets": {
-											"translate": [
-												0,
-												20,
-												0
-											],
-											"scale": [
-												1.7,
-												1.7,
-												1.7
-											]
-										},
-										"skin_list": [
-											{
-												"variant": 0
-											},
-											{
-												"variant": 1
-											},
-											{
-												"variant": 2
-											},
-											{
-												"variant": 3
-											},
-											{
-												"variant": 4
-											},
-											{
-												"variant": 5
-											},
-											{
-												"variant": 6
-											},
-											{
-												"variant": 7
-											},
-											{
-												"variant": 8
-											},
-											{
-												"variant": 9
-											},
-											{
-												"variant": 10
-											},
-											{
-												"variant": 11
-											},
-											{
-												"variant": 12
-											},
-											{
-												"variant": 13
-											},
-											{
-												"variant": 14
-											},
-											{
-												"variant": 15
-											},
-											{
-												"variant": 16
-											},
-											{
-												"variant": 17
-											},
-											{
-												"variant": 18
-											},
-											{
-												"variant": 19
-											}
-										]
-									}
-								},
-								"minecraft:loot": {
-									"table": "loot_tables/jenny.json"
-								}
-							},
-							"component_groups": {
-								"blowj": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_blowj"
-									}
-								},
-								"str1p": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_nude_struc",
-										"delay": {
-											"value": 4.76
-										}
-									}
-								}
-							},
-							"events": {
-								"blowj": {
-									"add": {
-										"component_groups": [
-											"blowj"
-										]
-									}
-								},
-								"str1p": {
-									"add": {
-										"component_groups": [
-											"str1p"
-										]
-									},
-									"run_command": {
-										"command": [
-											"effect @s slowness 9999 255 true",
-											"playsound jenny.iddle @a[r=10]"
-										]
-									}
-								},
-								"sexoxd": {
-									"run_command": {
-										"command": [
-											"effect @s invisibility 9 1 true",
-											"structure load jenny_search ~ ~1 ~",
-											"kill @s"
-										]
-									}
-								}
-							}
-						},
-						"key": "description",
-						"children": [
-							{
-								"data": "cumin:jenny",
-								"key": "identifier"
-							},
-							{
-								"data": "false",
-								"key": "is_spawnable"
-							},
-							{
-								"data": "true",
-								"key": "is_summonable"
-							},
-							{
-								"data": "false",
-								"key": "is_experimental"
-							},
-							{
-								"open": {
-									"identifier": "cumin:jenny",
-									"is_spawnable": false,
-									"is_summonable": true,
-									"is_experimental": false,
-									"animations": {
-										"bed": "controller.animation.jennybed"
-									},
-									"scripts": {
-										"animate": [
-											"bed"
-										]
-									}
-								},
-								"key": "animations",
-								"is_minified": true,
-								"children": {
-									"bed": "controller.animation.jennybed"
-								}
-							},
-							{
-								"open": {
-									"identifier": "cumin:jenny",
-									"is_spawnable": false,
-									"is_summonable": true,
-									"is_experimental": false,
-									"animations": {
-										"bed": "controller.animation.jennybed"
-									},
-									"scripts": {
-										"animate": [
-											"bed"
-										]
-									}
-								},
-								"key": "scripts",
-								"children": [
-									{
-										"open": {
-											"animate": [
-												"bed"
-											]
-										},
-										"key": "animate",
-										"is_minified": true,
-										"children": [
-											"bed"
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"key": "components",
-						"children": [
-							{
-								"key": "minecraft:is_hidden_when_invisible",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:type_family",
-								"children": [
-									{
-										"open": {
-											"family": [
-												"mob",
-												"jenny"
-											]
-										},
-										"key": "family",
-										"is_minified": true,
-										"children": [
-											"mob",
-											"jenny"
-										]
-									}
-								]
-							},
-							{
-								"key": "minecraft:breathable",
-								"is_minified": true,
-								"children": {
-									"total_supply": 15,
-									"suffocate_time": 0
-								}
-							},
-							{
-								"key": "minecraft:collision_box",
-								"is_minified": true,
-								"children": {
-									"width": 0.6,
-									"height": 1.8
-								}
-							},
-							{
-								"key": "minecraft:nameable",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:health",
-								"is_minified": true,
-								"children": {
-									"value": 20
-								}
-							},
-							{
-								"key": "minecraft:hurt_on_condition",
-								"is_minified": true,
-								"children": {
-									"damage_conditions": [
-										{
-											"filters": {
-												"test": "in_lava",
-												"subject": "self",
-												"operator": "==",
-												"value": true
-											},
-											"cause": "lava",
-											"damage_per_tick": 4
-										}
-									]
-								}
-							},
-							{
-								"key": "minecraft:damage_sensor",
-								"is_minified": true,
-								"children": {
-									"triggers": {
-										"cause": "fall",
-										"deals_damage": false
-									}
-								}
-							},
-							{
-								"key": "minecraft:leashable",
-								"is_minified": true,
-								"children": {
-									"soft_distance": 4,
-									"hard_distance": 6,
-									"max_distance": 10
-								}
-							},
-							{
-								"key": "minecraft:navigation.walk",
-								"is_minified": true,
-								"children": {
-									"can_path_over_water": true,
-									"avoid_damage_blocks": true
-								}
-							},
-							{
-								"key": "minecraft:movement.basic",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:jump.static",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:can_climb",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:behavior.float",
-								"is_minified": true,
-								"children": {
-									"priority": 0
-								}
-							},
-							{
-								"key": "minecraft:behavior.mount_pathing",
-								"is_minified": true,
-								"children": {
-									"priority": 2,
-									"speed_multiplier": 1.5,
-									"target_dist": 0,
-									"track_target": true
-								}
-							},
-							{
-								"key": "minecraft:behavior.tempt",
-								"children": [
-									{
-										"open": {
-											"items": [
-												"minecraft:gold_ingot",
-												"minecraft:diamond",
-												"minecraft:emerald"
-											],
-											"priority": 1
-										},
-										"key": "items",
-										"is_minified": true,
-										"children": [
-											"minecraft:gold_ingot",
-											"minecraft:diamond",
-											"minecraft:emerald"
-										]
-									},
-									{
-										"data": "1",
-										"key": "priority"
-									}
-								]
-							},
-							{
-								"key": "minecraft:behavior.random_stroll",
-								"is_minified": true,
-								"children": {
-									"priority": 6,
-									"speed_multiplier": 1
-								}
-							},
-							{
-								"key": "minecraft:behavior.look_at_player",
-								"is_minified": true,
-								"children": {
-									"priority": 7,
-									"look_distance": 6,
-									"probability": 0.02
-								}
-							},
-							{
-								"key": "minecraft:behavior.random_look_around",
-								"is_minified": true,
-								"children": {
-									"priority": 8
-								}
-							},
-							{
-								"key": "minecraft:physics",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"key": "minecraft:pushable",
-								"is_minified": true,
-								"children": {
-									"is_pushable": true,
-									"is_pushable_by_piston": true
-								}
-							},
-							{
-								"key": "minecraft:conditional_bandwidth_optimization",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"open": {
-									"minecraft:is_hidden_when_invisible": {},
-									"minecraft:type_family": {
-										"family": [
-											"mob",
-											"jenny"
-										]
-									},
-									"minecraft:breathable": {
-										"total_supply": 15,
-										"suffocate_time": 0
-									},
-									"minecraft:collision_box": {
-										"width": 0.6,
-										"height": 1.8
-									},
-									"minecraft:nameable": {},
-									"minecraft:health": {
-										"value": 20
-									},
-									"minecraft:hurt_on_condition": {
-										"damage_conditions": [
-											{
-												"filters": {
-													"test": "in_lava",
-													"subject": "self",
-													"operator": "==",
-													"value": true
-												},
-												"cause": "lava",
-												"damage_per_tick": 4
-											}
-										]
-									},
-									"minecraft:damage_sensor": {
-										"triggers": {
-											"cause": "fall",
-											"deals_damage": false
-										}
-									},
-									"minecraft:leashable": {
-										"soft_distance": 4,
-										"hard_distance": 6,
-										"max_distance": 10
-									},
-									"minecraft:navigation.walk": {
-										"can_path_over_water": true,
-										"avoid_damage_blocks": true
-									},
-									"minecraft:movement.basic": {},
-									"minecraft:jump.static": {},
-									"minecraft:can_climb": {},
-									"minecraft:behavior.float": {
-										"priority": 0
-									},
-									"minecraft:behavior.mount_pathing": {
-										"priority": 2,
-										"speed_multiplier": 1.5,
-										"target_dist": 0,
-										"track_target": true
-									},
-									"minecraft:behavior.tempt": {
-										"items": [
-											"minecraft:gold_ingot",
-											"minecraft:diamond",
-											"minecraft:emerald"
-										],
-										"priority": 1
-									},
-									"minecraft:behavior.random_stroll": {
-										"priority": 6,
-										"speed_multiplier": 1
-									},
-									"minecraft:behavior.look_at_player": {
-										"priority": 7,
-										"look_distance": 6,
-										"probability": 0.02
-									},
-									"minecraft:behavior.random_look_around": {
-										"priority": 8
-									},
-									"minecraft:physics": {},
-									"minecraft:pushable": {
-										"is_pushable": true,
-										"is_pushable_by_piston": true
-									},
-									"minecraft:conditional_bandwidth_optimization": {},
-									"minecraft:movement": {
-										"value": 0.25
-									},
-									"minecraft:npc": {
-										"npc_data": {
-											"portrait_offsets": {
-												"translate": [
-													-7,
-													50,
-													0
-												],
-												"scale": [
-													1.75,
-													1.75,
-													1.75
-												]
-											},
-											"picker_offsets": {
-												"translate": [
-													0,
-													20,
-													0
-												],
-												"scale": [
-													1.7,
-													1.7,
-													1.7
-												]
-											},
-											"skin_list": [
-												{
-													"variant": 0
-												},
-												{
-													"variant": 1
-												},
-												{
-													"variant": 2
-												},
-												{
-													"variant": 3
-												},
-												{
-													"variant": 4
-												},
-												{
-													"variant": 5
-												},
-												{
-													"variant": 6
-												},
-												{
-													"variant": 7
-												},
-												{
-													"variant": 8
-												},
-												{
-													"variant": 9
-												},
-												{
-													"variant": 10
-												},
-												{
-													"variant": 11
-												},
-												{
-													"variant": 12
-												},
-												{
-													"variant": 13
-												},
-												{
-													"variant": 14
-												},
-												{
-													"variant": 15
-												},
-												{
-													"variant": 16
-												},
-												{
-													"variant": 17
-												},
-												{
-													"variant": 18
-												},
-												{
-													"variant": 19
-												}
-											]
-										}
-									},
-									"minecraft:loot": {
-										"table": "loot_tables/jenny.json"
-									}
-								},
-								"key": "minecraft:movement",
-								"is_minified": true,
-								"children": {
-									"value": 0.25
-								}
-							},
-							{
-								"key": "minecraft:npc",
-								"is_minified": true,
-								"children": {
-									"npc_data": {
-										"portrait_offsets": {
-											"translate": [
-												-7,
-												50,
-												0
-											],
-											"scale": [
-												1.75,
-												1.75,
-												1.75
-											]
-										},
-										"picker_offsets": {
-											"translate": [
-												0,
-												20,
-												0
-											],
-											"scale": [
-												1.7,
-												1.7,
-												1.7
-											]
-										},
-										"skin_list": [
-											{
-												"variant": 0
-											},
-											{
-												"variant": 1
-											},
-											{
-												"variant": 2
-											},
-											{
-												"variant": 3
-											},
-											{
-												"variant": 4
-											},
-											{
-												"variant": 5
-											},
-											{
-												"variant": 6
-											},
-											{
-												"variant": 7
-											},
-											{
-												"variant": 8
-											},
-											{
-												"variant": 9
-											},
-											{
-												"variant": 10
-											},
-											{
-												"variant": 11
-											},
-											{
-												"variant": 12
-											},
-											{
-												"variant": 13
-											},
-											{
-												"variant": 14
-											},
-											{
-												"variant": 15
-											},
-											{
-												"variant": 16
-											},
-											{
-												"variant": 17
-											},
-											{
-												"variant": 18
-											},
-											{
-												"variant": 19
-											}
-										]
-									}
-								}
-							},
-							{
-								"open": {
-									"minecraft:is_hidden_when_invisible": {},
-									"minecraft:type_family": {
-										"family": [
-											"mob",
-											"jenny"
-										]
-									},
-									"minecraft:breathable": {
-										"total_supply": 15,
-										"suffocate_time": 0
-									},
-									"minecraft:collision_box": {
-										"width": 0.6,
-										"height": 1.8
-									},
-									"minecraft:nameable": {},
-									"minecraft:health": {
-										"value": 20
-									},
-									"minecraft:hurt_on_condition": {
-										"damage_conditions": [
-											{
-												"filters": {
-													"test": "in_lava",
-													"subject": "self",
-													"operator": "==",
-													"value": true
-												},
-												"cause": "lava",
-												"damage_per_tick": 4
-											}
-										]
-									},
-									"minecraft:damage_sensor": {
-										"triggers": {
-											"cause": "fall",
-											"deals_damage": false
-										}
-									},
-									"minecraft:leashable": {
-										"soft_distance": 4,
-										"hard_distance": 6,
-										"max_distance": 10
-									},
-									"minecraft:navigation.walk": {
-										"can_path_over_water": true,
-										"avoid_damage_blocks": true
-									},
-									"minecraft:movement.basic": {},
-									"minecraft:jump.static": {},
-									"minecraft:can_climb": {},
-									"minecraft:behavior.float": {
-										"priority": 0
-									},
-									"minecraft:behavior.mount_pathing": {
-										"priority": 2,
-										"speed_multiplier": 1.5,
-										"target_dist": 0,
-										"track_target": true
-									},
-									"minecraft:behavior.tempt": {
-										"items": [
-											"minecraft:gold_ingot",
-											"minecraft:diamond",
-											"minecraft:emerald"
-										],
-										"priority": 1
-									},
-									"minecraft:behavior.random_stroll": {
-										"priority": 6,
-										"speed_multiplier": 1
-									},
-									"minecraft:behavior.look_at_player": {
-										"priority": 7,
-										"look_distance": 6,
-										"probability": 0.02
-									},
-									"minecraft:behavior.random_look_around": {
-										"priority": 8
-									},
-									"minecraft:physics": {},
-									"minecraft:pushable": {
-										"is_pushable": true,
-										"is_pushable_by_piston": true
-									},
-									"minecraft:conditional_bandwidth_optimization": {},
-									"minecraft:movement": {
-										"value": 0.25
-									},
-									"minecraft:npc": {
-										"npc_data": {
-											"portrait_offsets": {
-												"translate": [
-													-7,
-													50,
-													0
-												],
-												"scale": [
-													1.75,
-													1.75,
-													1.75
-												]
-											},
-											"picker_offsets": {
-												"translate": [
-													0,
-													20,
-													0
-												],
-												"scale": [
-													1.7,
-													1.7,
-													1.7
-												]
-											},
-											"skin_list": [
-												{
-													"variant": 0
-												},
-												{
-													"variant": 1
-												},
-												{
-													"variant": 2
-												},
-												{
-													"variant": 3
-												},
-												{
-													"variant": 4
-												},
-												{
-													"variant": 5
-												},
-												{
-													"variant": 6
-												},
-												{
-													"variant": 7
-												},
-												{
-													"variant": 8
-												},
-												{
-													"variant": 9
-												},
-												{
-													"variant": 10
-												},
-												{
-													"variant": 11
-												},
-												{
-													"variant": 12
-												},
-												{
-													"variant": 13
-												},
-												{
-													"variant": 14
-												},
-												{
-													"variant": 15
-												},
-												{
-													"variant": 16
-												},
-												{
-													"variant": 17
-												},
-												{
-													"variant": 18
-												},
-												{
-													"variant": 19
-												}
-											]
-										}
-									},
-									"minecraft:loot": {
-										"table": "loot_tables/jenny.json"
-									}
-								},
-								"key": "minecraft:loot",
-								"is_minified": true,
-								"children": {
-									"table": "loot_tables/jenny.json"
-								}
-							}
-						]
-					},
-					{
-						"open": {
-							"description": {
-								"identifier": "cumin:jenny",
-								"is_spawnable": false,
-								"is_summonable": true,
-								"is_experimental": false,
-								"animations": {
-									"bed": "controller.animation.jennybed"
-								},
-								"scripts": {
-									"animate": [
-										"bed"
-									]
-								}
-							},
-							"components": {
-								"minecraft:is_hidden_when_invisible": {},
-								"minecraft:type_family": {
-									"family": [
-										"mob",
-										"jenny"
-									]
-								},
-								"minecraft:breathable": {
-									"total_supply": 15,
-									"suffocate_time": 0
-								},
-								"minecraft:collision_box": {
-									"width": 0.6,
-									"height": 1.8
-								},
-								"minecraft:nameable": {},
-								"minecraft:health": {
-									"value": 20
-								},
-								"minecraft:hurt_on_condition": {
-									"damage_conditions": [
-										{
-											"filters": {
-												"test": "in_lava",
-												"subject": "self",
-												"operator": "==",
-												"value": true
-											},
-											"cause": "lava",
-											"damage_per_tick": 4
-										}
-									]
-								},
-								"minecraft:damage_sensor": {
-									"triggers": {
-										"cause": "fall",
-										"deals_damage": false
-									}
-								},
-								"minecraft:leashable": {
-									"soft_distance": 4,
-									"hard_distance": 6,
-									"max_distance": 10
-								},
-								"minecraft:navigation.walk": {
-									"can_path_over_water": true,
-									"avoid_damage_blocks": true
-								},
-								"minecraft:movement.basic": {},
-								"minecraft:jump.static": {},
-								"minecraft:can_climb": {},
-								"minecraft:behavior.float": {
-									"priority": 0
-								},
-								"minecraft:behavior.mount_pathing": {
-									"priority": 2,
-									"speed_multiplier": 1.5,
-									"target_dist": 0,
-									"track_target": true
-								},
-								"minecraft:behavior.tempt": {
-									"items": [
-										"minecraft:gold_ingot",
-										"minecraft:diamond",
-										"minecraft:emerald"
-									],
-									"priority": 1
-								},
-								"minecraft:behavior.random_stroll": {
-									"priority": 6,
-									"speed_multiplier": 1
-								},
-								"minecraft:behavior.look_at_player": {
-									"priority": 7,
-									"look_distance": 6,
-									"probability": 0.02
-								},
-								"minecraft:behavior.random_look_around": {
-									"priority": 8
-								},
-								"minecraft:physics": {},
-								"minecraft:pushable": {
-									"is_pushable": true,
-									"is_pushable_by_piston": true
-								},
-								"minecraft:conditional_bandwidth_optimization": {},
-								"minecraft:movement": {
-									"value": 0.25
-								},
-								"minecraft:npc": {
-									"npc_data": {
-										"portrait_offsets": {
-											"translate": [
-												-7,
-												50,
-												0
-											],
-											"scale": [
-												1.75,
-												1.75,
-												1.75
-											]
-										},
-										"picker_offsets": {
-											"translate": [
-												0,
-												20,
-												0
-											],
-											"scale": [
-												1.7,
-												1.7,
-												1.7
-											]
-										},
-										"skin_list": [
-											{
-												"variant": 0
-											},
-											{
-												"variant": 1
-											},
-											{
-												"variant": 2
-											},
-											{
-												"variant": 3
-											},
-											{
-												"variant": 4
-											},
-											{
-												"variant": 5
-											},
-											{
-												"variant": 6
-											},
-											{
-												"variant": 7
-											},
-											{
-												"variant": 8
-											},
-											{
-												"variant": 9
-											},
-											{
-												"variant": 10
-											},
-											{
-												"variant": 11
-											},
-											{
-												"variant": 12
-											},
-											{
-												"variant": 13
-											},
-											{
-												"variant": 14
-											},
-											{
-												"variant": 15
-											},
-											{
-												"variant": 16
-											},
-											{
-												"variant": 17
-											},
-											{
-												"variant": 18
-											},
-											{
-												"variant": 19
-											}
-										]
-									}
-								},
-								"minecraft:loot": {
-									"table": "loot_tables/jenny.json"
-								}
-							},
-							"component_groups": {
-								"blowj": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_blowj"
-									}
-								},
-								"str1p": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_nude_struc",
-										"delay": {
-											"value": 4.76
-										}
-									}
-								}
-							},
-							"events": {
-								"blowj": {
-									"add": {
-										"component_groups": [
-											"blowj"
-										]
-									}
-								},
-								"str1p": {
-									"add": {
-										"component_groups": [
-											"str1p"
-										]
-									},
-									"run_command": {
-										"command": [
-											"effect @s slowness 9999 255 true",
-											"playsound jenny.iddle @a[r=10]"
-										]
-									}
-								},
-								"sexoxd": {
-									"run_command": {
-										"command": [
-											"effect @s invisibility 9 1 true",
-											"structure load jenny_search ~ ~1 ~",
-											"kill @s"
-										]
-									}
-								}
-							}
-						},
-						"key": "component_groups",
-						"children": [
-							{
-								"open": {
-									"blowj": {
-										"minecraft:transformation": {
-											"into": "cumin:jenny_blowj"
-										}
-									},
-									"str1p": {
-										"minecraft:transformation": {
-											"into": "cumin:jenny_nude_struc",
-											"delay": {
-												"value": 4.76
-											}
-										}
-									}
-								},
-								"key": "blowj",
-								"children": [
-									{
-										"open": {
-											"minecraft:transformation": {
-												"into": "cumin:jenny_blowj"
-											}
-										},
-										"key": "minecraft:transformation",
-										"is_minified": true,
-										"children": {
-											"into": "cumin:jenny_blowj"
-										}
-									}
-								]
-							},
-							{
-								"open": {
-									"blowj": {
-										"minecraft:transformation": {
-											"into": "cumin:jenny_blowj"
-										}
-									},
-									"str1p": {
-										"minecraft:transformation": {
-											"into": "cumin:jenny_nude_struc",
-											"delay": {
-												"value": 4.76
-											}
-										}
-									}
-								},
-								"key": "str1p",
-								"children": [
-									{
-										"open": {
-											"minecraft:transformation": {
-												"into": "cumin:jenny_nude_struc",
-												"delay": {
-													"value": 4.76
-												}
-											}
-										},
-										"key": "minecraft:transformation",
-										"children": [
-											{
-												"open": {
-													"into": "cumin:jenny_nude_struc",
-													"delay": {
-														"value": 4.76
-													}
-												},
-												"data": "cumin:jenny_nude_struc",
-												"key": "into"
-											},
-											{
-												"open": {
-													"into": "cumin:jenny_nude_struc",
-													"delay": {
-														"value": 4.76
-													}
-												},
-												"key": "delay",
-												"is_minified": true,
-												"children": {
-													"value": 4.76
-												}
-											}
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"open": {
-							"description": {
-								"identifier": "cumin:jenny",
-								"is_spawnable": false,
-								"is_summonable": true,
-								"is_experimental": false,
-								"animations": {
-									"bed": "controller.animation.jennybed"
-								},
-								"scripts": {
-									"animate": [
-										"bed"
-									]
-								}
-							},
-							"components": {
-								"minecraft:is_hidden_when_invisible": {},
-								"minecraft:type_family": {
-									"family": [
-										"mob",
-										"jenny"
-									]
-								},
-								"minecraft:breathable": {
-									"total_supply": 15,
-									"suffocate_time": 0
-								},
-								"minecraft:collision_box": {
-									"width": 0.6,
-									"height": 1.8
-								},
-								"minecraft:nameable": {},
-								"minecraft:health": {
-									"value": 20
-								},
-								"minecraft:hurt_on_condition": {
-									"damage_conditions": [
-										{
-											"filters": {
-												"test": "in_lava",
-												"subject": "self",
-												"operator": "==",
-												"value": true
-											},
-											"cause": "lava",
-											"damage_per_tick": 4
-										}
-									]
-								},
-								"minecraft:damage_sensor": {
-									"triggers": {
-										"cause": "fall",
-										"deals_damage": false
-									}
-								},
-								"minecraft:leashable": {
-									"soft_distance": 4,
-									"hard_distance": 6,
-									"max_distance": 10
-								},
-								"minecraft:navigation.walk": {
-									"can_path_over_water": true,
-									"avoid_damage_blocks": true
-								},
-								"minecraft:movement.basic": {},
-								"minecraft:jump.static": {},
-								"minecraft:can_climb": {},
-								"minecraft:behavior.float": {
-									"priority": 0
-								},
-								"minecraft:behavior.mount_pathing": {
-									"priority": 2,
-									"speed_multiplier": 1.5,
-									"target_dist": 0,
-									"track_target": true
-								},
-								"minecraft:behavior.tempt": {
-									"items": [
-										"minecraft:gold_ingot",
-										"minecraft:diamond",
-										"minecraft:emerald"
-									],
-									"priority": 1
-								},
-								"minecraft:behavior.random_stroll": {
-									"priority": 6,
-									"speed_multiplier": 1
-								},
-								"minecraft:behavior.look_at_player": {
-									"priority": 7,
-									"look_distance": 6,
-									"probability": 0.02
-								},
-								"minecraft:behavior.random_look_around": {
-									"priority": 8
-								},
-								"minecraft:physics": {},
-								"minecraft:pushable": {
-									"is_pushable": true,
-									"is_pushable_by_piston": true
-								},
-								"minecraft:conditional_bandwidth_optimization": {},
-								"minecraft:movement": {
-									"value": 0.25
-								},
-								"minecraft:npc": {
-									"npc_data": {
-										"portrait_offsets": {
-											"translate": [
-												-7,
-												50,
-												0
-											],
-											"scale": [
-												1.75,
-												1.75,
-												1.75
-											]
-										},
-										"picker_offsets": {
-											"translate": [
-												0,
-												20,
-												0
-											],
-											"scale": [
-												1.7,
-												1.7,
-												1.7
-											]
-										},
-										"skin_list": [
-											{
-												"variant": 0
-											},
-											{
-												"variant": 1
-											},
-											{
-												"variant": 2
-											},
-											{
-												"variant": 3
-											},
-											{
-												"variant": 4
-											},
-											{
-												"variant": 5
-											},
-											{
-												"variant": 6
-											},
-											{
-												"variant": 7
-											},
-											{
-												"variant": 8
-											},
-											{
-												"variant": 9
-											},
-											{
-												"variant": 10
-											},
-											{
-												"variant": 11
-											},
-											{
-												"variant": 12
-											},
-											{
-												"variant": 13
-											},
-											{
-												"variant": 14
-											},
-											{
-												"variant": 15
-											},
-											{
-												"variant": 16
-											},
-											{
-												"variant": 17
-											},
-											{
-												"variant": 18
-											},
-											{
-												"variant": 19
-											}
-										]
-									}
-								},
-								"minecraft:loot": {
-									"table": "loot_tables/jenny.json"
-								}
-							},
-							"component_groups": {
-								"blowj": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_blowj"
-									}
-								},
-								"str1p": {
-									"minecraft:transformation": {
-										"into": "cumin:jenny_nude_struc",
-										"delay": {
-											"value": 4.76
-										}
-									}
-								}
-							},
-							"events": {
-								"blowj": {
-									"add": {
-										"component_groups": [
-											"blowj"
-										]
-									}
-								},
-								"str1p": {
-									"add": {
-										"component_groups": [
-											"str1p"
-										]
-									},
-									"run_command": {
-										"command": [
-											"effect @s slowness 9999 255 true",
-											"playsound jenny.iddle @a[r=10]"
-										]
-									}
-								},
-								"sexoxd": {
-									"run_command": {
-										"command": [
-											"effect @s invisibility 9 1 true",
-											"structure load jenny_search ~ ~1 ~",
-											"kill @s"
-										]
-									}
-								}
-							}
-						},
-						"key": "events",
-						"children": [
-							{
-								"open": {
-									"blowj": {
-										"add": {
-											"component_groups": [
-												"blowj"
-											]
-										}
-									},
-									"str1p": {
-										"add": {
-											"component_groups": [
-												"str1p"
-											]
-										},
-										"run_command": {
-											"command": [
-												"effect @s slowness 9999 255 true",
-												"playsound jenny.iddle @a[r=10]"
-											]
-										}
-									},
-									"sexoxd": {
-										"run_command": {
-											"command": [
-												"effect @s invisibility 9 1 true",
-												"structure load jenny_search ~ ~1 ~",
-												"kill @s"
-											]
-										}
-									}
-								},
-								"key": "blowj",
-								"children": [
-									{
-										"open": {
-											"add": {
-												"component_groups": [
-													"blowj"
-												]
-											}
-										},
-										"key": "add",
-										"children": [
-											{
-												"open": {
-													"component_groups": [
-														"blowj"
-													]
-												},
-												"key": "component_groups",
-												"is_minified": true,
-												"children": [
-													"blowj"
-												]
-											}
-										]
-									}
-								]
-							},
-							{
-								"open": {
-									"blowj": {
-										"add": {
-											"component_groups": [
-												"blowj"
-											]
-										}
-									},
-									"str1p": {
-										"add": {
-											"component_groups": [
-												"str1p"
-											]
-										},
-										"run_command": {
-											"command": [
-												"effect @s slowness 9999 255 true",
-												"playsound jenny.iddle @a[r=10]"
-											]
-										}
-									},
-									"sexoxd": {
-										"run_command": {
-											"command": [
-												"effect @s invisibility 9 1 true",
-												"structure load jenny_search ~ ~1 ~",
-												"kill @s"
-											]
-										}
-									}
-								},
-								"key": "str1p",
-								"children": [
-									{
-										"open": {
-											"add": {
-												"component_groups": [
-													"str1p"
-												]
-											},
-											"run_command": {
-												"command": [
-													"effect @s slowness 9999 255 true",
-													"playsound jenny.iddle @a[r=10]"
-												]
-											}
-										},
-										"key": "add",
-										"children": [
-											{
-												"open": {
-													"component_groups": [
-														"str1p"
-													]
-												},
-												"key": "component_groups",
-												"is_minified": true,
-												"children": [
-													"str1p"
-												]
-											}
-										]
-									},
-									{
-										"open": {
-											"add": {
-												"component_groups": [
-													"str1p"
-												]
-											},
-											"run_command": {
-												"command": [
-													"effect @s slowness 9999 255 true",
-													"playsound jenny.iddle @a[r=10]"
-												]
-											}
-										},
-										"key": "run_command",
-										"children": [
-											{
-												"open": {
-													"command": [
-														"effect @s slowness 9999 255 true",
-														"playsound jenny.iddle @a[r=10]"
-													]
-												},
-												"key": "command",
-												"is_minified": true,
-												"children": [
-													"effect @s slowness 9999 255 true",
-													"playsound jenny.iddle @a[r=10]"
-												]
-											}
-										]
-									}
-								]
-							},
-							{
-								"open": {
-									"blowj": {
-										"add": {
-											"component_groups": [
-												"blowj"
-											]
-										}
-									},
-									"str1p": {
-										"add": {
-											"component_groups": [
-												"str1p"
-											]
-										},
-										"run_command": {
-											"command": [
-												"effect @s slowness 9999 255 true",
-												"playsound jenny.iddle @a[r=10]"
-											]
-										}
-									},
-									"sexoxd": {
-										"run_command": {
-											"command": [
-												"effect @s invisibility 9 1 true",
-												"structure load jenny_search ~ ~1 ~",
-												"kill @s"
-											]
-										}
-									}
-								},
-								"key": "sexoxd",
-								"children": [
-									{
-										"open": {
-											"run_command": {
-												"command": [
-													"effect @s invisibility 9 1 true",
-													"structure load jenny_search ~ ~1 ~",
-													"kill @s"
-												]
-											}
-										},
-										"key": "run_command",
-										"children": [
-											{
-												"open": {
-													"command": [
-														"effect @s invisibility 9 1 true",
-														"structure load jenny_search ~ ~1 ~",
-														"kill @s"
-													]
-												},
-												"key": "command",
-												"is_minified": true,
-												"children": [
-													"effect @s invisibility 9 1 true",
-													"structure load jenny_search ~ ~1 ~",
-													"kill @s"
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		]
-	}
+        "format_version": "1.16.100",
+        "minecraft:entity": {
+                "description": {
+                        "identifier": "cumin:jenny",
+                        "is_spawnable": false,
+                        "is_summonable": true,
+                        "is_experimental": false,
+                        "animations": {
+                                "bed": "controller.animation.jennybed"
+                        },
+                        "scripts": {
+                                "animate": [
+                                        "bed"
+                                ]
+                        }
+                },
+                "components": {
+                        "minecraft:is_hidden_when_invisible": {},
+                        "minecraft:type_family": {
+                                "family": [
+                                        "mob",
+                                        "jenny"
+                                ]
+                        },
+                        "minecraft:breathable": {
+                                "total_supply": 15,
+                                "suffocate_time": 0
+                        },
+                        "minecraft:collision_box": {
+                                "width": 0.6,
+                                "height": 1.8
+                        },
+                        "minecraft:nameable": {},
+                        "minecraft:health": {
+                                "value": 20
+                        },
+                        "minecraft:hurt_on_condition": {
+                                "damage_conditions": [
+                                        {
+                                                "filters": {
+                                                        "test": "in_lava",
+                                                        "subject": "self",
+                                                        "operator": "==",
+                                                        "value": true
+                                                },
+                                                "cause": "lava",
+                                                "damage_per_tick": 4
+                                        }
+                                ]
+                        },
+                        "minecraft:damage_sensor": {
+                                "triggers": {
+                                        "cause": "fall",
+                                        "deals_damage": false
+                                }
+                        },
+                        "minecraft:leashable": {
+                                "soft_distance": 4,
+                                "hard_distance": 6,
+                                "max_distance": 10
+                        },
+                        "minecraft:navigation.walk": {
+                                "can_path_over_water": true,
+                                "avoid_damage_blocks": true
+                        },
+                        "minecraft:movement.basic": {},
+                        "minecraft:jump.static": {},
+                        "minecraft:can_climb": {},
+                        "minecraft:behavior.float": {
+                                "priority": 0
+                        },
+                        "minecraft:behavior.mount_pathing": {
+                                "priority": 2,
+                                "speed_multiplier": 1.5,
+                                "target_dist": 0,
+                                "track_target": true
+                        },
+                        "minecraft:behavior.tempt": {
+                                "items": [
+                                        "minecraft:gold_ingot",
+                                        "minecraft:diamond",
+                                        "minecraft:emerald"
+                                ],
+                                "priority": 1,
+                                "speed_multiplier": 1.25
+                        },
+                        "minecraft:behavior.random_stroll": {
+                                "priority": 6,
+                                "speed_multiplier": 1
+                        },
+                        "minecraft:behavior.look_at_player": {
+                                "priority": 7,
+                                "look_distance": 6,
+                                "probability": 0.02
+                        },
+                        "minecraft:behavior.random_look_around": {
+                                "priority": 8
+                        },
+                        "minecraft:physics": {},
+                        "minecraft:pushable": {
+                                "is_pushable": true,
+                                "is_pushable_by_piston": true
+                        },
+                        "minecraft:conditional_bandwidth_optimization": {},
+                        "minecraft:movement": {
+                                "value": 0.25
+                        },
+                        "minecraft:interact": {
+                                "interactions": [
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "is_sneaking",
+                                                                                "subject": "other",
+                                                                                "value": true
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "go_sleep",
+                                                        "target": "self"
+                                                },
+                                                "interact_text": "action.interact.tell_sleep"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:diamond"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "blowj_dia",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_diamond"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:emerald"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "str1p",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_emerald"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
+                                                                                "test": "has_equipment",
+                                                                                "subject": "other",
+                                                                                "domain": "hand",
+                                                                                "value": "minecraft:gold_ingot"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "gift_gold",
+                                                        "target": "self"
+                                                },
+                                                "use_item": true,
+                                                "interact_text": "action.interact.give_gold"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "test": "is_family",
+                                                                "subject": "other",
+                                                                "value": "player"
+                                                        },
+                                                        "event": "chat_jenny",
+                                                        "target": "self"
+                                                },
+                                                "interact_text": "action.interact.talk"
+                                        }
+                                ]
+                        },
+                        "minecraft:loot": {
+                                "table": "loot_tables/jenny.json"
+                        }
+                },
+                "component_groups": {
+                        "blowj": {
+                                "minecraft:transformation": {
+                                        "into": "cumin:jenny_blowj"
+                                }
+                        },
+                        "blowj_dia": {
+                                "minecraft:transformation": {
+                                        "into": "cumin:jenny_blowj"
+                                }
+                        },
+                        "str1p": {
+                                "minecraft:transformation": {
+                                        "into": "cumin:jenny_nude_struc",
+                                        "delay": {
+                                                "value": 4.76
+                                        }
+                                }
+                        }
+                },
+                "events": {
+                        "blowj": {
+                                "add": {
+                                        "component_groups": [
+                                                "blowj"
+                                        ]
+                                }
+                        },
+                        "blowj_dia": {
+                                "add": {
+                                        "component_groups": [
+                                                "blowj_dia"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "effect @s slowness 9999 255 true",
+                                                "playsound jenny.iddle @a[r=10]"
+                                        ]
+                                }
+                        },
+                        "str1p": {
+                                "add": {
+                                        "component_groups": [
+                                                "str1p"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "effect @s slowness 9999 255 true",
+                                                "playsound jenny.iddle @a[r=10]"
+                                        ]
+                                }
+                        },
+                        "gift_gold": {
+                                "run_command": {
+                                        "command": [
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "particle minecraft:heart_particle ~ ~1 ~",
+                                                "xp 5 @p",
+                                                "playanimation @s animation.jn.payment animation.jn.idle 0.5"
+                                        ]
+                                }
+                        },
+                        "chat_jenny": {
+                                "run_command": {
+                                        "command": [
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "particle minecraft:heart_particle ~ ~1 ~"
+                                        ]
+                                }
+                        },
+                        "sexoxd": {
+                                "run_command": {
+                                        "command": [
+                                                "effect @s invisibility 9 1 true",
+                                                "structure load mystructure:jenny_search ~ ~1 ~",
+                                                "kill @s"
+                                        ]
+                                }
+                        },
+                        "go_sleep": {
+                                "run_command": {
+                                        "command": [
+                                                "effect @s invisibility 1 1 true",
+                                                "summon cumin:jenny_sleep ~ ~ ~",
+                                                "kill @s"
+                                        ]
+                                }
+                        }
+                }
+        }
 }
