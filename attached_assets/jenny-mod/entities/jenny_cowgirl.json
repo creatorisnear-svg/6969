@@ -1,0 +1,110 @@
+{
+        "format_version": "1.16.100",
+        "minecraft:entity": {
+                "description": {
+                        "identifier": "cumin:jenny_cowgirl",
+                        "is_summonable": true,
+                        "is_spawnable": false,
+                        "is_experimental": false,
+                        "animations": {
+                                "tpjenny": "controller.animation.jennytp"
+                        },
+                        "scripts": {
+                                "animate": [
+                                        "tpjenny"
+                                ]
+                        }
+                },
+                "component_groups": {
+                        "cowgirl_phase": {
+                                "minecraft:timer": {
+                                        "looping": false,
+                                        "time": 30,
+                                        "time_down_event": {
+                                                "event": "to_missionary"
+                                        }
+                                }
+                        },
+                        "missionary_phase": {
+                                "minecraft:timer": {
+                                        "looping": false,
+                                        "time": 30,
+                                        "time_down_event": {
+                                                "event": "end_scene"
+                                        }
+                                }
+                        },
+                        "despawn": {
+                                "minecraft:despawn": {}
+                        }
+                },
+                "components": {
+                        "minecraft:health": {
+                                "value": 1
+                        },
+                        "minecraft:physics": {},
+                        "minecraft:knockback_resistance": {
+                                "value": 1
+                        },
+                        "minecraft:damage_sensor": {
+                                "triggers": [
+                                        {
+                                                "on_damage": {},
+                                                "deals_damage": false
+                                        }
+                                ]
+                        }
+                },
+                "events": {
+                        "minecraft:entity_spawned": {
+                                "add": {
+                                        "component_groups": [
+                                                "cowgirl_phase"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @s animation.jn.cowgirl animation.jn.cowgirl",
+                                                "playanimation @p animation.player.cowgirl animation.player.cowgirl",
+                                                "playsound jenny.s3x @a[r=10]",
+                                                "effect @p slowness 9999 255 true"
+                                        ]
+                                }
+                        },
+                        "to_missionary": {
+                                "remove": {
+                                        "component_groups": [
+                                                "cowgirl_phase"
+                                        ]
+                                },
+                                "add": {
+                                        "component_groups": [
+                                                "missionary_phase"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @s animation.jn.missionary animation.jn.missionary",
+                                                "playanimation @p animation.player.missionary animation.player.missionary",
+                                                "playsound jenny.s3x @a[r=10]"
+                                        ]
+                                }
+                        },
+                        "end_scene": {
+                                "add": {
+                                        "component_groups": [
+                                                "despawn"
+                                        ]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @p animation.humanoid.base_pose",
+                                                "effect @p invisibility 9999 1 true",
+                                                "structure load jenny ~ ~1 ~",
+                                                "kill @s"
+                                        ]
+                                }
+                        }
+                }
+        }
+}

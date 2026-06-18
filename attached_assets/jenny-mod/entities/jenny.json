@@ -255,7 +255,8 @@
                                         "command": [
                                                 "playsound jenny.iddle @a[r=8]",
                                                 "particle minecraft:heart_particle ~ ~1 ~",
-                                                "xp 5 @p"
+                                                "xp 5 @p",
+                                                "playanimation @s animation.jn.payment animation.jn.idle 0.5"
                                         ]
                                 }
                         },

@@ -177,10 +177,10 @@
                                                                 "subject": "other",
                                                                 "value": "player"
                                                         },
-                                                        "event": "blowj",
+                                                        "event": "cowgirl_scene",
                                                         "target": "self"
                                                 },
-                                                "interact_text": "action.interact.talk"
+                                                "interact_text": "action.interact.take_to_bed"
                                         }
                                 ]
                         },
@@ -209,6 +209,15 @@
                                                 "playsound jenny.iddle @a[r=8]",
                                                 "particle minecraft:heart_particle ~ ~1 ~",
                                                 "xp 5 @p"
+                                        ]
+                                }
+                        },
+                        "cowgirl_scene": {
+                                "run_command": {
+                                        "command": [
+                                                "effect @s invisibility 9 1 true",
+                                                "function cowgirl_scene",
+                                                "kill @s"
                                         ]
                                 }
                         },
