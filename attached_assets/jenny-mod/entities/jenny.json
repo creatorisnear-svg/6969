@@ -77,19 +77,6 @@
                                 "target_dist": 0,
                                 "track_target": true
                         },
-                        "minecraft:behavior.tempt": {
-                                "items": [
-                                        "minecraft:gold_ingot",
-                                        "minecraft:diamond",
-                                        "minecraft:emerald"
-                                ],
-                                "priority": 1,
-                                "speed_multiplier": 1.25
-                        },
-                        "minecraft:behavior.random_stroll": {
-                                "priority": 6,
-                                "speed_multiplier": 1
-                        },
                         "minecraft:behavior.look_at_player": {
                                 "priority": 7,
                                 "look_distance": 6,
@@ -103,7 +90,6 @@
                                 "is_pushable": true,
                                 "is_pushable_by_piston": true
                         },
-                        "minecraft:conditional_bandwidth_optimization": {},
                         "minecraft:movement": {
                                 "value": 0.25
                         },
@@ -129,7 +115,9 @@
                                                         "event": "go_sleep",
                                                         "target": "self"
                                                 },
-                                                "interact_text": "action.interact.tell_sleep"
+                                                "interact_text": "action.interact.tell_sleep",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         },
                                         {
                                                 "on_interact": {
@@ -152,7 +140,9 @@
                                                         "target": "self"
                                                 },
                                                 "use_item": true,
-                                                "interact_text": "action.interact.give_diamond"
+                                                "interact_text": "action.interact.give_diamond",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         },
                                         {
                                                 "on_interact": {
@@ -175,7 +165,9 @@
                                                         "target": "self"
                                                 },
                                                 "use_item": true,
-                                                "interact_text": "action.interact.give_emerald"
+                                                "interact_text": "action.interact.give_emerald",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         },
                                         {
                                                 "on_interact": {
@@ -198,7 +190,9 @@
                                                         "target": "self"
                                                 },
                                                 "use_item": true,
-                                                "interact_text": "action.interact.give_gold"
+                                                "interact_text": "action.interact.give_gold",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         },
                                         {
                                                 "on_interact": {
@@ -210,7 +204,9 @@
                                                         "event": "chat_jenny",
                                                         "target": "self"
                                                 },
-                                                "interact_text": "action.interact.talk"
+                                                "interact_text": "action.interact.talk",
+                                                "swing": true,
+                                                "cooldown": 0.5
                                         }
                                 ]
                         },
