@@ -1,0 +1,54 @@
+{
+        "format_version": "1.16.100",
+        "minecraft:entity": {
+                "description": {
+                        "identifier": "cumin:jenny_sleep",
+                        "is_summonable": true,
+                        "is_spawnable": false,
+                        "is_experimental": false
+                },
+                "components": {
+                        "minecraft:health": {"value": 20},
+                        "minecraft:physics": {},
+                        "minecraft:pushable": {"is_pushable": true, "is_pushable_by_piston": true},
+                        "minecraft:knockback_resistance": {"value": 1},
+                        "minecraft:damage_sensor": {
+                                "triggers": {"cause": "fall", "deals_damage": false}
+                        },
+                        "minecraft:leashable": {
+                                "soft_distance": 4,
+                                "hard_distance": 6,
+                                "max_distance": 10
+                        },
+                        "minecraft:nameable": {},
+                        "minecraft:type_family": {"family": ["mob", "jenny"]},
+                        "minecraft:interact": {
+                                "interactions": [
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "test": "is_family",
+                                                                "subject": "other",
+                                                                "value": "player"
+                                                        },
+                                                        "event": "sleep_sex",
+                                                        "target": "self"
+                                                },
+                                                "interact_text": "action.interact.sleep_sex"
+                                        }
+                                ]
+                        },
+                        "minecraft:loot": {"table": "loot_tables/jenny.json"}
+                },
+                "events": {
+                        "sleep_sex": {
+                                "run_command": {
+                                        "command": [
+                                                "function sleep_sex_scene",
+                                                "kill @s"
+                                        ]
+                                }
+                        }
+                }
+        }
+}

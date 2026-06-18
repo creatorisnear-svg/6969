@@ -1,0 +1,80 @@
+{
+        "format_version": "1.16.100",
+        "minecraft:entity": {
+                "description": {
+                        "identifier": "cumin:jenny_sleep_sex",
+                        "is_summonable": true,
+                        "is_spawnable": false,
+                        "is_experimental": false,
+                        "animations": {
+                                "tpjenny": "controller.animation.jennytp"
+                        },
+                        "scripts": {
+                                "animate": ["tpjenny"]
+                        }
+                },
+                "component_groups": {
+                        "lift_phase": {
+                                "minecraft:timer": {
+                                        "looping": false,
+                                        "time": 3,
+                                        "time_down_event": {"event": "to_sex"}
+                                }
+                        },
+                        "sex_phase": {
+                                "minecraft:timer": {
+                                        "looping": false,
+                                        "time": 60,
+                                        "time_down_event": {"event": "end_scene"}
+                                }
+                        },
+                        "despawn": {"minecraft:despawn": {}}
+                },
+                "components": {
+                        "minecraft:health": {"value": 1},
+                        "minecraft:physics": {},
+                        "minecraft:knockback_resistance": {"value": 1},
+                        "minecraft:damage_sensor": {
+                                "triggers": [{"on_damage": {}, "deals_damage": false}]
+                        }
+                },
+                "events": {
+                        "minecraft:entity_spawned": {
+                                "add": {
+                                        "component_groups": ["lift_phase"]
+                                },
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @s animation.jn.skirt_lift animation.jn.skirt_lift 3",
+                                                "playanimation @p animation.player.sleep_sex animation.player.sleep_sex",
+                                                "event entity @e[type=cumin:player_cock,r=5] to_sleep_sex",
+                                                "playsound jenny.iddle @a[r=8]",
+                                                "effect @p slowness 9999 255 true"
+                                        ]
+                                }
+                        },
+                        "to_sex": {
+                                "remove": {"component_groups": ["lift_phase"]},
+                                "add": {"component_groups": ["sex_phase"]},
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @s animation.jn.sleep_sex animation.jn.sleep_sex",
+                                                "playsound jenny.s3x @a[r=10]"
+                                        ]
+                                }
+                        },
+                        "end_scene": {
+                                "add": {"component_groups": ["despawn"]},
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @p animation.humanoid.base_pose",
+                                                "effect @p clear",
+                                                "kill @e[type=cumin:player_cock,r=5]",
+                                                "structure load jenny ~ ~1 ~",
+                                                "kill @s"
+                                        ]
+                                }
+                        }
+                }
+        }
+}

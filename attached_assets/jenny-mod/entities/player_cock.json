@@ -66,6 +66,13 @@
                                         ]
                                 }
                         },
+                        "to_sleep_sex": {
+                                "run_command": {
+                                        "command": [
+                                                "playanimation @s animation.jn.cock_sleep_sex animation.jn.cock_sleep_sex"
+                                        ]
+                                }
+                        },
                         "despawn": {
                                 "add": {
                                         "component_groups": [

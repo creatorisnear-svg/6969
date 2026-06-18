@@ -1,109 +1,358 @@
 {
-        "format_version": "1.8.0",
-        "animations": {
-                "animation.player.s3x": {
-                        "loop": true,
-                        "animation_length": 0.52,
-                        "bones": {
-                                "body": {
-                                        "rotation": {
-                                                "0.0": [0, 0, 0],
-                                                "0.28": [-5, 0, 0],
-                                                "0.52": [0, 0, 0]
-                                        }
-                                },
-                                "leftArm": {
-                                        "rotation": [-35, 27.5, 0]
-                                },
-                                "rightArm": {
-                                        "rotation": [-35, -27.5, 0]
-                                },
-                                "leftLeg": {
-                                        "rotation": {
-                                                "0.0": [0, 0, 0],
-                                                "0.28": [10, 0, 0],
-                                                "0.52": [0, 0, 0]
-                                        },
-                                        "position": {
-                                                "0.0": [0, 0, 0],
-                                                "0.28": [0, 0, -1],
-                                                "0.52": [0, 0, 0]
-                                        }
-                                },
-                                "rightLeg": {
-                                        "rotation": {
-                                                "0.0": [0, 0, 0],
-                                                "0.28": [10, 0, 0],
-                                                "0.52": [0, 0, 0]
-                                        },
-                                        "position": {
-                                                "0.0": [0, 0, 0],
-                                                "0.28": [0, 0, -1],
-                                                "0.52": [0, 0, 0]
-                                        }
-                                }
-                        }
-                },
-                "animation.player.cowgirl": {
-                        "loop": true,
-                        "animation_length": 0.8,
-                        "bones": {
-                                "body": {
-                                        "rotation": [-90, 0, 0]
-                                },
-                                "head": {
-                                        "rotation": [90, 0, 0]
-                                },
-                                "leftArm": {
-                                        "rotation": [0, 0, 45]
-                                },
-                                "rightArm": {
-                                        "rotation": [0, 0, -45]
-                                },
-                                "leftLeg": {
-                                        "rotation": [0, 0, 10]
-                                },
-                                "rightLeg": {
-                                        "rotation": [0, 0, -10]
-                                }
-                        }
-                },
-                "animation.player.missionary": {
-                        "loop": true,
-                        "animation_length": 0.8,
-                        "bones": {
-                                "body": {
-                                        "rotation": {
-                                                "0.0": [-80, 0, 0],
-                                                "0.2": [-85, 0, 0],
-                                                "0.4": [-80, 0, 0],
-                                                "0.6": [-85, 0, 0],
-                                                "0.8": [-80, 0, 0]
-                                        },
-                                        "position": {
-                                                "0.0": [0, 0, 0],
-                                                "0.2": [0, 0, 0.5],
-                                                "0.4": [0, 0, 0],
-                                                "0.6": [0, 0, 0.5],
-                                                "0.8": [0, 0, 0]
-                                        }
-                                },
-                                "head": {
-                                        "rotation": [80, 0, 0]
-                                },
-                                "leftArm": {
-                                        "rotation": [60, 0, 20]
-                                },
-                                "rightArm": {
-                                        "rotation": [60, 0, -20]
-                                },
-                                "leftLeg": {
-                                        "rotation": [-15, 0, 10]
-                                },
-                                "rightLeg": {
-                                        "rotation": [-15, 0, -10]
-                                }
-                        }
-                }
-        }
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.s3x": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.28": [
+							-5,
+							0,
+							0
+						],
+						"0.52": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"leftArm": {
+					"rotation": [
+						-35,
+						27.5,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-35,
+						-27.5,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.28": [
+							10,
+							0,
+							0
+						],
+						"0.52": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.28": [
+							0,
+							0,
+							-1
+						],
+						"0.52": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.28": [
+							10,
+							0,
+							0
+						],
+						"0.52": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.28": [
+							0,
+							0,
+							-1
+						],
+						"0.52": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.player.cowgirl": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": [
+						-90,
+						0,
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						0,
+						0,
+						45
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						0,
+						0,
+						-45
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						0,
+						0,
+						10
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						0,
+						0,
+						-10
+					]
+				}
+			}
+		},
+		"animation.player.missionary": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [
+							-80,
+							0,
+							0
+						],
+						"0.2": [
+							-85,
+							0,
+							0
+						],
+						"0.4": [
+							-80,
+							0,
+							0
+						],
+						"0.6": [
+							-85,
+							0,
+							0
+						],
+						"0.8": [
+							-80,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							0,
+							0,
+							0.5
+						],
+						"0.4": [
+							0,
+							0,
+							0
+						],
+						"0.6": [
+							0,
+							0,
+							0.5
+						],
+						"0.8": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"head": {
+					"rotation": [
+						80,
+						0,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						60,
+						0,
+						20
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						60,
+						0,
+						-20
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-15,
+						0,
+						10
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						-15,
+						0,
+						-10
+					]
+				}
+			}
+		},
+		"animation.player.sleep_sex": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [
+							-75,
+							0,
+							0
+						],
+						"0.2": [
+							-80,
+							0,
+							0
+						],
+						"0.4": [
+							-75,
+							0,
+							0
+						],
+						"0.6": [
+							-80,
+							0,
+							0
+						],
+						"0.8": [
+							-75,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							0,
+							0,
+							0.5
+						],
+						"0.4": [
+							0,
+							0,
+							0
+						],
+						"0.6": [
+							0,
+							0,
+							0.5
+						],
+						"0.8": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"head": {
+					"rotation": [
+						75,
+						0,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						50,
+						0,
+						25
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						50,
+						0,
+						-25
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						-10,
+						0,
+						5
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						-10,
+						0,
+						-5
+					]
+				}
+			}
+		}
+	}
 }

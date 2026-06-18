@@ -119,6 +119,27 @@
                                                                                 "value": "player"
                                                                         },
                                                                         {
+                                                                                "test": "is_sneaking",
+                                                                                "subject": "other",
+                                                                                "value": true
+                                                                        }
+                                                                ]
+                                                        },
+                                                        "event": "go_sleep",
+                                                        "target": "self"
+                                                },
+                                                "interact_text": "action.interact.tell_sleep"
+                                        },
+                                        {
+                                                "on_interact": {
+                                                        "filters": {
+                                                                "all_of": [
+                                                                        {
+                                                                                "test": "is_family",
+                                                                                "subject": "other",
+                                                                                "value": "player"
+                                                                        },
+                                                                        {
                                                                                 "test": "has_equipment",
                                                                                 "subject": "other",
                                                                                 "domain": "hand",
@@ -273,6 +294,15 @@
                                         "command": [
                                                 "effect @s invisibility 9 1 true",
                                                 "structure load jenny_search ~ ~1 ~",
+                                                "kill @s"
+                                        ]
+                                }
+                        },
+                        "go_sleep": {
+                                "run_command": {
+                                        "command": [
+                                                "effect @s invisibility 1 1 true",
+                                                "summon cumin:jenny_sleep ~ ~ ~",
                                                 "kill @s"
                                         ]
                                 }
